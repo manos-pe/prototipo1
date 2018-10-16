@@ -13,8 +13,8 @@
 	<link rel="stylesheet" href="css/font-icon.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="shortcut icon" href="images/manos.ico "/>
-  <link rel="apple-touch-icon" sizes="128x128" href="image/manos_logo.png">
-  <link rel="icon" sizes="192x192" href="imagenes/manos_logo.png">
+  <link rel="apple-touch-icon" sizes="128x128" href="images/manos_logo.png">
+  <link rel="icon" sizes="192x192" href="images/manos_logo.png">
 </head>
 
 <body>
@@ -63,12 +63,11 @@
       <nav class="navigation" role="navigation">
 				<ul class="primary-nav">
           <li><a href="#intro">INICIO</a></li>
-          <li><a href="#howToWork">SERVICIOS</a></li>
 					<li><a href="#howToWork">CÓMO FUNCIONA</a></li>
           <li><a href="#packages">PAQUETES</a></li>
 					<li><a href="#services">COMPROMISO</a></li>
 					<li><a href="#testimonials">CLIENTES</a></li>
-          <li><a href="#contact" class="btn btn-large" style="background:#23527c;border:2px solid #23527c; color:white">ENTRAR</a></li>
+					<li><a href="#contact" class="btn btn-large" style="background:#23527c;border:2px solid #23527c; color:white">SOLICITAR</a></li>
           <!-- <li><a href="{% url 'users:login" class="btn btn-large" style="background:#23527c;border:2px solid #23527c; color:white">ÚNETE</a></li> -->
         </ul>
       </nav>
@@ -81,7 +80,7 @@
       <div class="banner-text text-center">
         <h1>Especialistas en la limpieza de tu hogar y oficina</h1>
         <p></p>
-				<a href="https://api.whatsapp.com/send?phone=51983774366&text=Me%20interesa%20saber%20mas%20sobre%20Mamos." class="btn btn-large">Solicitar Servicio</a> </div>
+				<a href="#contact" class="btn btn-large">Solicitar Servicio</a> </div>
       <!-- banner text -->
     </div>
   </div>
@@ -274,7 +273,8 @@
     </div>
   </div>
 </section>
-<!--  <div class="container">
+<section id="contact" class="section contact" v-cloak>
+  <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2 conForm">
         <h4 data-toggle="modal" data-target="#applyModal">Pedir un Servicio</h4>
@@ -290,11 +290,12 @@
 					<div class="simple-msg">[[form.message]]</div>
 	        <button class="submitBnt" > Solicitar Servicio </button>
 					<p><strong><a style="color:#23527c;" target="_blank" href="https://www.facebook.com/ManosApp/"><u>O Escríbenos en Facebook</u></a></strong></p>
+          <p><strong><a style="color:#23527c;" target="_blank" href="https://api.whatsapp.com/send?phone=51983774366&text=Me%20interesa%20saber%20mas%20sobre%20Mamos."><u>O Por Whatsapp</u></a></strong></p>
 				</form>
       </div>
     </div>
   </div>
-</section>-->
+</section>
 <!-- contact section -->
 <!-- Footer section -->
 <footer class="footer">
