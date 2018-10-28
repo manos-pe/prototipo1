@@ -67,7 +67,7 @@
           <li><a href="#packages">PAQUETES</a></li>
 					<li><a href="#services">COMPROMISO</a></li>
 					<li><a href="#testimonials">CLIENTES</a></li>
-					<li><a href="#contact" class="btn btn-large" style="background:#23527c;border:2px solid #23527c; color:white">SOLICITAR</a></li>
+					<li><a href="#contact" class="btn btn-large" style="background:#23527c;border:2px solid #23527c; color:white">INICIAR SESIÓN</a></li>
           <!-- <li><a href="{% url 'users:login" class="btn btn-large" style="background:#23527c;border:2px solid #23527c; color:white">ÚNETE</a></li> -->
         </ul>
       </nav>
@@ -269,29 +269,6 @@
             </div>
           </li>
         </ul>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="contact" class="section contact" v-cloak>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2 conForm">
-        <h4 data-toggle="modal" data-target="#applyModal">Pedir un Servicio</h4>
-        <p>Recibirás un mensaje nuestro muy pronto luego de haber enviado tu mensaje<span class="hidden-xs">, un <strong>MANOS</strong> especialista siempre estará listo para ayudarte con tus problemas</span>. </p>
-				<form @submit.prevent="send_email" method="post">
-				  <input name="name" id="name" v-model="form.name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Tu Nombre..." maxlength="80" required>
-	        <input name="email" id="email" v-model="form.email" type="email" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Correo Electrónico..." maxlength="80" required>
-	        <textarea name="comments" id="comments" v-model="form.description" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Acerca del Servicio..." maxlength="200" required></textarea>
-					<div class="form-check-label">
-				    <input class="form-check-input" type="checkbox" value="" required>
-				    Acepto los <a style="color:#00A1B1" href="users/#terms" target="_blank">Términos y Condiciones</a> del Servicio y la <a style="color:#00A1B1" href="users/#privacy" target="_blank">Política de Privacidad </a>
-				  </div>
-					<div class="simple-msg">[[form.message]]</div>
-	        <button class="submitBnt" > Solicitar Servicio </button>
-					<p><strong><a style="color:#23527c;" target="_blank" href="https://www.facebook.com/ManosApp/"><u>O Escríbenos en Facebook</u></a></strong></p>
-          <p><strong><a style="color:#23527c;" target="_blank" href="https://api.whatsapp.com/send?phone=51983774366&text=Me%20interesa%20saber%20mas%20sobre%20Mamos."><u>O Por Whatsapp</u></a></strong></p>
-				</form>
       </div>
     </div>
   </div>
