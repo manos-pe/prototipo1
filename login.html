@@ -21,7 +21,7 @@
   <body>
     <!-- Navbar -->
     <nav
-      class="shadow p-3 mb-5 bg-white rounded navbar navbar-expand-md navbar-light bg-light mb-3"
+      class="shadow p-3 mb-3 bg-white rounded navbar navbar-expand-md navbar-light bg-light mb-3"
     >
       <div class="container">
         <a class="navbar-brand" href="#"
@@ -46,20 +46,26 @@
       </div>
     </nav>
     <!-- Title -->
-    <div class="m-3"><h2 class="text-primary m-3">Identificación</h2></div>
+    <div class="title m-3 text-center"><h3 class="text-center m-auto text-primary">Identificación</h2></div>
+    <!-- breakline -->
+    <div class="progress w-75 m-auto" style="height:2px;">
+        <div class="progress-bar bg-secondary" style="width:100%"></div>
+      </div>
     <!-- Login Form -->
     <form class="pl-3 pr-3" action="">
+      <!-- Mail -->
       <div class="form-group p-3">
-        <label for="email">Email address</label>
+        <label for="email">Correo electrónico:</label>
         <input
-          class="form-control form-control-lg"
+          class="form-control"
           type="email"
           id="email"
           placeholder="Enter email"
         />
       </div>
+      <!-- Password -->
       <div class="form-group pl-3 pr-3">
-        <label for="password">Password</label>
+        <label for="password">Contraseña:</label>
         <input
           class="form-control"
           type="password"
@@ -67,15 +73,18 @@
           placeholder="Password"
         />
       </div>
-      <div>
-        <button class="p-2 m-2 btn btn-outline-primary" type="button">
-          Recuperar contraseña
-        </button>
-        <button class="p-2 m-2 btn btn-primary" type="button">
+      <div class="text-center m-auto">
+        <button class="p-2 m-2 btn btn-link w-15" type="button">
+          Recuperar<br />contraseña
+				</button>
+				<a href="client/book.html">
+        <button class="p-2 m-2 btn btn-primary w-15" type="button">
           Iniciar sesión
-        </button>
-        <button class="p-2 m-2 btn btn-outline-primary" type="button">
-          ¿No tienes cuenta? Créate una ahora.
+        </button></a>
+      </div>
+      <div class="text-center m-auto">
+        <button class="p-2 m-2 btn btn-link w-30" type="button">
+          ¿No tienes cuenta?<br />Créate una ahora.
         </button>
       </div>
     </form>
