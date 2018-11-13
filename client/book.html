@@ -25,10 +25,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/js/gijgo.min.js" type="text/javascript"></script>
     <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="shadow p-3 mb-3 bg-white rounded navbar navbar-expand-md navbar-light bg-light mb-3">
+    <nav class="shadow p-3 mb-3 fixed-top bg-white rounded navbar navbar-expand-md navbar-light bg-light mb-3">
         <div class="m-auto container">
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#clientNavBar">
                         <span class="navbar-toggler-icon"></span>
@@ -49,7 +50,7 @@
             </ul>
         </div>
         </div>
-    </nav>
+    </nav><br><br><br><br>
     <!-- Second navbar -->
     <div class="text-center">
       <button class="btn btn-outline-primary active m-2 text-center" type="button">
@@ -91,7 +92,7 @@
         <div class="form-group">
             <label for="datepicker">Fecha:</label><br>
             <!-- Date picker GUI -->
-            <input class="text-primary" id="datepicker" width="276" />
+            <input class="text-primary m-auto" id="datepicker" width="276" />
             <script>
                 $('#datepicker').datepicker({
                 uiLibrary: 'bootstrap4'
@@ -103,19 +104,42 @@
         <div class="form-group">
             <label for="TimePicker">Hora:</label>
             <!-- Time picker GUI-->
-            <input id="timepicker" width="276" />
+            <input class="m-auto" id="timepicker" width="276" />
             <script>
                 $('#timepicker').timepicker();
             </script>
         </div>
-        
+
         <!-- Needs selector -->
+        <div class="form-group">
+            <label>Necesidades:</label><br>
+            <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2 text-center">
+                    <input type="radio" name="options" id="clean" autocomplete="off" checked>Limpiar
+                </label>
+                <label class="btn btn-outline-primary m-2 text-center">
+                    <input type="radio" name="options" id="cook" autocomplete="off">Cocinar
+                </label>
+                <label class="btn btn-outline-primary m-2 text-center">
+                    <input type="radio" name="options" id="wash" autocomplete="off">Lavar
+                </label>
+                <label class="btn btn-outline-primary m-2 text-center">
+                        <input type="radio" name="options" id="iron" autocomplete="off" checked>Planchar
+                    </label>
+            </div>
+        </div>
 
         <!-- Aditional comments -->
+        <div class="form-group">
+            <label for="AditionalComment">Comentario</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+        </div>
 
         <!-- Price -->
+        <h5>TOTAL: S/.65.00</h1>
 
         <!-- Submit Button-->
+        <button type="submit" class="text-center mx-auto btn btn-primary">Solicitar</button>
     </form>
     <!-- Bootstrap script -->
     <script
