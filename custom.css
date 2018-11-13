@@ -1,0 +1,7 @@
+* {
+  font-family: "Open Sans";
+}
+.custom-toggler {
+  border-color: rgb(255, 102, 203);
+  background-color: blue;
+}

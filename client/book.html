@@ -31,7 +31,7 @@
     <!-- Navbar -->
     <nav class="shadow p-3 mb-3 fixed-top bg-white rounded navbar navbar-expand-md navbar-light bg-light mb-3">
         <div class="m-auto container">
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#clientNavBar">
+                <button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#clientNavBar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
         <a class="m-auto navbar-brand" href="#">
@@ -51,12 +51,13 @@
         </div>
         </div>
     </nav><br><br><br><br>
+
     <!-- Second navbar -->
     <div class="text-center">
-      <button class="btn btn-outline-primary active m-2 text-center" type="button">
+      <button class="w-25 btn btn-outline-primary active m-2 text-center" type="button">
         Nuevo<br />Servicio
       </button>
-      <a href="bookings.html"></a><button class="btn btn-outline-primary m-2 text-center" type="button">
+      <a href="bookings.html"><button class="w-25 btn btn-outline-primary m-2 text-center" type="button">
         Estado de<br />servicios
       </button></a>
     </div>
@@ -114,19 +115,25 @@
         <div class="form-group">
             <label>Necesidades:</label><br>
             <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
-                <label class="btn btn-outline-primary m-2 text-center">
-                    <input type="radio" name="options" id="clean" autocomplete="off" checked>Limpiar
-                </label>
-                <label class="btn btn-outline-primary m-2 text-center">
-                    <input type="radio" name="options" id="cook" autocomplete="off">Cocinar
-                </label>
-                <label class="btn btn-outline-primary m-2 text-center">
-                    <input type="radio" name="options" id="wash" autocomplete="off">Lavar
-                </label>
-                <label class="btn btn-outline-primary m-2 text-center">
-                        <input type="radio" name="options" id="iron" autocomplete="off" checked>Planchar
+                    <label class="btn btn-outline-primary m-2 text-center">
+                        <input type="radio" name="options" id="clean" autocomplete="off" checked>Limpiar
                     </label>
             </div>
+            <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
+                <label class="btn btn-outline-primary m-2 text-center">
+                    <input type="radio" name="options" id="cook" autocomplete="off" checked>Cocinar
+                </label>
+            </div><br>
+            <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
+                    <label class="btn btn-outline-primary m-2 text-center">
+                        <input type="radio" name="options" id="wash" autocomplete="off" checked>Lavar
+                    </label>
+                </div>
+                <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
+                        <label class="btn btn-outline-primary m-2 text-center">
+                            <input type="radio" name="options" id="iron" autocomplete="off" checked>Planchar
+                        </label>
+                    </div>
         </div>
 
         <!-- Aditional comments -->
