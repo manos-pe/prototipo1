@@ -35,43 +35,77 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav
-      class="shadow p-3 mb-3 fixed-top bg-white rounded navbar navbar-expand-md navbar-light bg-light mb-3"
-    >
-      <div class="m-auto container">
-        <button
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#clientNavBar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="m-auto navbar-brand" href="#">
-          <img style="width:150px" src="../images/manos.png" />
-        </a>
-        <div class="collapse navbar-collapse" id="clientNavBar">
-          <ul class="nav navbar-nav">
-            <li><a href="#intro">Ajuste de cuenta</a></li>
-            <li><a href="#howToWork">Mis direcciones</a></li>
-            <li><a href="#packages">Historial de servicios</a></li>
-            <li><a href="#services">Crédito</a></li>
-            <li><a href="#testimonials">Promociones</a></li>
-            <li><a href="#testimonials">Preguntas frecuentes</a></li>
-            <li><a href="#testimonials">Ayuda</a></li>
-            <li><a href="#testimonials">Cerrar sesión</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <br /><br /><br /><br />
+    <nav class="shadow p-3 mb-3 fixed-top bg-white rounded navbar navbar-expand-md navbar-light bg-light mb-3">
+            <div class="m-auto container">
+                    <button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#clientNavBar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+            <a class="m-auto navbar-brand" href="#">
+                <img style="width:150px" src="../images/manos.png"/>
+                </a>
+            <div class="collapse navbar-collapse" id="clientNavBar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <div class="progress w-50 m-2" style="height:1px;">
+                            <div class="progress-bar bg-secondary" style="width:100%"></div>
+                        </div>
+                    </li>
+                <li><a class="m-3" href="#intro">Ajuste de cuenta</a></li>
+                <li>
+                    <div class="progress w-50 m-2" style="height:1px;">
+                        <div class="progress-bar bg-secondary" style="width:100%"></div>
+                    </div>
+                </li>
+                <li><a class="m-3" href="#howToWork">Mis direcciones</a></li>
+                <li>
+                        <div class="progress w-50 m-2" style="height:1px;">
+                            <div class="progress-bar bg-secondary" style="width:100%"></div>
+                        </div>
+                    </li>
+                <li><a class="m-3" href="#packages">Historial de servicios</a></li>
+                <li>
+                        <div class="progress w-50 m-2" style="height:1px;">
+                            <div class="progress-bar bg-secondary" style="width:100%"></div>
+                        </div>
+                    </li>
+                <li><a class="m-3" href="#services">Crédito</a></li>
+                <li>
+                        <div class="progress w-50 m-2" style="height:1px;">
+                            <div class="progress-bar bg-secondary" style="width:100%"></div>
+                        </div>
+                    </li>
+                <li><a class="m-3" href="#testimonials">Promociones</a></li>
+                <li>
+                        <div class="progress w-50 m-2" style="height:1px;">
+                            <div class="progress-bar bg-secondary" style="width:100%"></div>
+                        </div>
+                    </li>
+                <li><a class="m-3" href="#testimonials">Preguntas frecuentes</a></li>
+                <li>
+                        <div class="progress w-50 m-2" style="height:1px;">
+                            <div class="progress-bar bg-secondary" style="width:100%"></div>
+                        </div>
+                    </li>
+                <li><a class="m-3" href="#testimonials">Ayuda</a></li>
+                <li>
+                    <div class="progress w-50 m-2" style="height:1px;">
+                        <div class="progress-bar bg-secondary" style="width:100%"></div>
+                    </div>
+                </li>
+                <li><a class="m-3 text-danger" href="#testimonials">Cerrar sesión</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav><br><br><br><br>
+
     <!-- Second navbar -->
     <div class="text-center">
-            <button class="w-25 btn btn-outline-primary active m-2 text-center" type="button">
+            <a href="book.html"><button class="w-25 btn btn-outline-primary m-2 text-center" type="button">
               Nuevo<br />Servicio
-            </button>
-            <a href="bookings.html"><button class="w-25 btn btn-outline-primary m-2 text-center" type="button">
-              Estado de<br />servicios
             </button></a>
+            <button class="w-25 btn btn-outline-primary active m-2 text-center" type="button">
+              Estado de<br />servicios
+            </button>
           </div>
 
     <!-- Services -->
@@ -100,7 +134,7 @@
           <a href="#" class="w-75 btn btn-primary">Seleccionar Manos</a>
         </div>
     </div>
-
+    <br>
     <!-- Card 2 -->
     <div class="card w-75 m-auto text-center" style="max-height: 900px;">
             <!-- Card Image -->
@@ -124,6 +158,22 @@
                 </table>
                 <a href="#" class="w-75 btn btn-secondary disabled">En espera</a>
               </div>
-          </div>
+          </div><br>
+    <!-- Bootstrap script -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
