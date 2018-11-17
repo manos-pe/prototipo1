@@ -38,55 +38,55 @@
             <img style="width:150px" src="../images/manos.png"/>
             </a>
         <div class="collapse navbar-collapse" id="clientNavBar">
-            <ul class="nav navbar-nav">
+            <ul class="primary-nav navbar-nav">
+                <li class="navbar-item">
+                    <div class="progress w-50 m-2" style="height:1px;">
+                        <div class="progress-bar bg-secondary" style="width:100%"></div>
+                    </div>
+                </li>
+                <li class="navbar-item"><a class="navbar-link m-3" href="#intro">Ajuste de cuenta</a></li>
                 <li>
                     <div class="progress w-50 m-2" style="height:1px;">
                         <div class="progress-bar bg-secondary" style="width:100%"></div>
                     </div>
                 </li>
-            <li><a class="m-3" href="#intro">Ajuste de cuenta</a></li>
-            <li>
-                <div class="progress w-50 m-2" style="height:1px;">
-                    <div class="progress-bar bg-secondary" style="width:100%"></div>
-                </div>
-            </li>
-            <li><a class="m-3" href="#howToWork">Mis direcciones</a></li>
-            <li>
+                <li class="navbar-item"><a class="navbar-link m-3" href="#howToWork">Mis direcciones</a></li>
+                <li>
+                        <div class="progress w-50 m-2" style="height:1px;">
+                            <div class="progress-bar bg-secondary" style="width:100%"></div>
+                        </div>
+                    </li>
+                <li class="navbar-item"><a class="navbar-link m-3" href="#packages">Historial de servicios</a></li>
+                <li>
+                        <div class="progress w-50 m-2" style="height:1px;">
+                            <div class="progress-bar bg-secondary" style="width:100%"></div>
+                        </div>
+                    </li>
+                <li class="navbar-item"><a class="navbar-link m-3" href="#services">Crédito</a></li>
+                <li>
+                        <div class="progress w-50 m-2" style="height:1px;">
+                            <div class="progress-bar bg-secondary" style="width:100%"></div>
+                        </div>
+                    </li>
+                <li class="navbar-item"><a class="m-3" href="#testimonials">Promociones</a></li>
+                <li>
+                        <div class="progress w-50 m-2" style="height:1px;">
+                            <div class="progress-bar bg-secondary" style="width:100%"></div>
+                        </div>
+                    </li>
+                <li class="navbar-item"><a class="m-3" href="#testimonials">Preguntas frecuentes</a></li>
+                <li>
+                        <div class="progress w-50 m-2" style="height:1px;">
+                            <div class="progress-bar bg-secondary" style="width:100%"></div>
+                        </div>
+                    </li>
+                <li class="navbar-item"><a class="m-3" href="#testimonials">Ayuda</a></li>
+                <li>
                     <div class="progress w-50 m-2" style="height:1px;">
                         <div class="progress-bar bg-secondary" style="width:100%"></div>
                     </div>
                 </li>
-            <li><a class="m-3" href="#packages">Historial de servicios</a></li>
-            <li>
-                    <div class="progress w-50 m-2" style="height:1px;">
-                        <div class="progress-bar bg-secondary" style="width:100%"></div>
-                    </div>
-                </li>
-            <li><a class="m-3" href="#services">Crédito</a></li>
-            <li>
-                    <div class="progress w-50 m-2" style="height:1px;">
-                        <div class="progress-bar bg-secondary" style="width:100%"></div>
-                    </div>
-                </li>
-            <li><a class="m-3" href="#testimonials">Promociones</a></li>
-            <li>
-                    <div class="progress w-50 m-2" style="height:1px;">
-                        <div class="progress-bar bg-secondary" style="width:100%"></div>
-                    </div>
-                </li>
-            <li><a class="m-3" href="#testimonials">Preguntas frecuentes</a></li>
-            <li>
-                    <div class="progress w-50 m-2" style="height:1px;">
-                        <div class="progress-bar bg-secondary" style="width:100%"></div>
-                    </div>
-                </li>
-            <li><a class="m-3" href="#testimonials">Ayuda</a></li>
-            <li>
-                <div class="progress w-50 m-2" style="height:1px;">
-                    <div class="progress-bar bg-secondary" style="width:100%"></div>
-                </div>
-            </li>
-            <li><a class="m-3 text-danger" href="#testimonials">Cerrar sesión</a></li>
+                <li class="navbar-item"><a class="m-3 text-danger" href="#testimonials">Cerrar sesión</a></li>
             </ul>
         </div>
         </div>
@@ -146,7 +146,7 @@
         <div class="form-group">
             <label for="TimePicker">Hora:</label>
             <!-- Time picker GUI-->
-            <input class="m-auto" id="timepicker" width="276" />
+            <input class="d-flex justify-content-center m-auto" id="timepicker" width="276" />
             <script>
                 $('#timepicker').timepicker();
             </script>
@@ -155,26 +155,28 @@
         <!-- Needs selector -->
         <div class="form-group">
             <label>Necesidades:</label><br>
-            <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
+            <div class="d-flex justify-content-center">
+                <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
                     <label class="btn btn-outline-primary m-2 text-center">
                         <input type="radio" name="options" id="clean" autocomplete="off">Limpiar
                     </label>
-            </div>
-            <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
-                <label class="btn btn-outline-primary m-2 text-center">
-                    <input type="radio" name="options" id="cook" autocomplete="off" checked>Cocinar
-                </label>
-            </div><br>
-            <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
+                </div>
+                <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
+                    <label class="btn btn-outline-primary m-2 text-center">
+                        <input type="radio" name="options" id="cook" autocomplete="off" checked>Cocinar
+                    </label>
+                </div><br>
+                <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
                     <label class="btn btn-outline-primary m-2 text-center">
                         <input type="radio" name="options" id="wash" autocomplete="off" checked>Lavar
                     </label>
                 </div>
                 <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
-                        <label class="btn btn-outline-primary m-2 text-center">
-                            <input type="radio" name="options" id="iron" autocomplete="off" checked>Planchar
-                        </label>
-                    </div>
+                    <label class="btn btn-outline-primary m-2 text-center">
+                        <input type="radio" name="options" id="iron" autocomplete="off" checked>Planchar
+                    </label>
+                </div>
+            </div>
         </div>
 
         <!-- Aditional comments -->
@@ -189,6 +191,7 @@
         <!-- Submit Button-->
         <button type="submit" class="text-center mx-auto btn btn-primary">Solicitar</button>
     </form>
+    
     <!-- Bootstrap script -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
