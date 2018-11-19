@@ -1,0 +1,14 @@
+.btn-primary {
+  background-image: linear-gradient(#23517a, #4084bf);
+}
+.btn-outline-primary {
+  color: #23527c;
+  border: #888888 1px solid;
+  font-display: bold;
+}
+.btn-outline-primary:hover {
+  background-image: linear-gradient(#23517a, #4084bf);
+}
+.btn-outline-primary:checked {
+  background-image: linear-gradient(#23517a, #4084bf);
+}
