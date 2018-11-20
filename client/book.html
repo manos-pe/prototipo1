@@ -50,11 +50,6 @@
                 <li class="navbar-item">
                     <a class="navbar-link" href="addresses.html">Mis direcciones</a>
                 </li>
-                <!--<li>
-                    <div class="progress w-50 m-2" style="height:1px;">
-                        <div class="progress-bar bg-secondary" style="width:100%"></div>
-                    </div>
-                </li>-->
                 <li class="navbar-item">
                     <a class="navbar-link" href="history.html">Historial de servicios</a>
                 </li>
@@ -78,103 +73,126 @@
         </div>
     </nav>
 
-    <!-- Second navbar -->
-    <div class="text-center containter mt-6">
-      <button class="w-25 btn btn-primary m-2 text-center" type="button">
-        Nuevo<br />Servicio
-      </button>
-      <a href="bookings.html"><button class="w-25 btn btn-outline-primary m-2 text-center" type="button">
-        Estado de<br />servicios
-      </button></a>
-    </div>
-    <form class="mr-auto ml-auto mt-3 float-center w-75">
-        <!-- Address Form -->
-        <div class="form-group">
-            <label for="AddressSelect">Dirección:</label>
-            <select class="form-control" id="AddressSelect">
-                <option>Departamento</option>
-                <option>Casa</option>
-                <option><a href="adresses.html">Agregar Dirección</a></option>
-            </select>
-        </div>
-
-        <!-- Pack Form -->
-        <div class="form-group">
-            <label>Paquete:</label><br>
-            <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
-                <label class="btn btn-outline-primary m-2 text-center">
-                    <input type="radio" name="options" id="3horas" autocomplete="off" checked> 3 Horas
-                </label>
-                <label class="btn btn-outline-primary m-2 text-center">
-                    <input type="radio" name="options" id="5horas" autocomplete="off">5 Horas
-                </label>
-                <label class="btn btn-outline-primary m-2 text-center">
-                    <input type="radio" name="options" id="8horas" autocomplete="off">8 Horas
-                </label>
-            </div>
-        </div>
-
-        <!-- Date picker-->
-        <div class="form-group">
-            <label for="datepicker">Fecha:</label><br>
-            <!-- Date picker GUI -->
-            <input class="text-primary m-auto" id="datepicker" width="276" />
-            <script>
-                $('#datepicker').datepicker({
-                uiLibrary: 'bootstrap4'
-            });
-            </script>
-        </div>
-
-        <!-- Time picker-->
-        <div class="form-group">
-            <label for="TimePicker">Hora:</label>
-            <!-- Time picker GUI-->
-            <input class="d-flex justify-content-center m-auto" id="timepicker" width="276" />
-            <script>
-                $('#timepicker').timepicker();
-            </script>
-        </div>
-
-        <!-- Needs selector -->
-        <div class="form-group">
-            <label>Necesidades:</label><br>
-            <div class="d-flex justify-content-center">
-                <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
-                    <label class="btn btn-outline-primary m-2 text-center">
-                        <input type="radio" name="options" id="clean" autocomplete="off">Limpiar
-                    </label>
-                </div>
-                <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
-                    <label class="btn btn-outline-primary m-2 text-center">
-                        <input type="radio" name="options" id="cook" autocomplete="off" checked>Cocinar
-                    </label>
-                </div><br>
-                <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
-                    <label class="btn btn-outline-primary m-2 text-center">
-                        <input type="radio" name="options" id="wash" autocomplete="off" checked>Lavar
-                    </label>
-                </div>
-                <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
-                    <label class="btn btn-outline-primary m-2 text-center">
-                        <input type="radio" name="options" id="iron" autocomplete="off" checked>Planchar
-                    </label>
+    <!-- NavBar for large and medium screens-->
+    <section id="Main_section" style="padding-top:100px;">
+        <div class="row">
+            <div class="col-lg-1 d-none d-lg-block">
+                <div></div>
+                <div>
+                    <ul>
+                        <li>Ajustes de cuenta</li>
+                        <li>Mis direcciones</li>
+                        <li>Historial de servicios</li>
+                        <li>Crédito</li>
+                        <li>Promociones</li>
+                        <li>Preguntas frecuentes</li>
+                        <li>Ayuda</li>
+                        <li>Cerrar sesión</li>
+                    </ul>
                 </div>
             </div>
+            <div class="col-lg-11">
+                <!-- Second navbar -->
+            <div class="text-center containter mt-6">
+                <button class="w-25 btn btn-primary m-2 text-center" type="button">
+                    Nuevo<br />Servicio
+                </button>
+                <a href="bookings.html"><button class="w-25 btn btn-outline-primary m-2 text-center" type="button">
+                    Estado de<br />servicios
+                </button></a>
+                </div>
+                <form class="mr-auto ml-auto mt-3 float-center w-75">
+                    <!-- Address Form -->
+                    <div class="form-group">
+                        <label for="AddressSelect">Dirección:</label>
+                        <select class="form-control" id="AddressSelect">
+                            <option>Departamento</option>
+                            <option>Casa</option>
+                            <option><a href="adresses.html">Agregar Dirección</a></option>
+                        </select>
+                    </div>
+        
+                    <!-- Pack Form -->
+                    <div class="form-group">
+                        <label>Paquete:</label><br>
+                        <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
+                            <label class="btn btn-outline-primary m-2 text-center">
+                                <input type="radio" name="options" id="3horas" autocomplete="off" checked> 3 Horas
+                            </label>
+                            <label class="btn btn-outline-primary m-2 text-center">
+                                <input type="radio" name="options" id="5horas" autocomplete="off">5 Horas
+                            </label>
+                            <label class="btn btn-outline-primary m-2 text-center">
+                                <input type="radio" name="options" id="8horas" autocomplete="off">8 Horas
+                            </label>
+                        </div>
+                    </div>
+        
+                    <!-- Date picker-->
+                    <div class="form-group">
+                        <label for="datepicker">Fecha:</label><br>
+                        <!-- Date picker GUI -->
+                        <input class="text-primary m-auto" id="datepicker" width="276" />
+                        <script>
+                            $('#datepicker').datepicker({
+                            uiLibrary: 'bootstrap4'
+                        });
+                        </script>
+                    </div>
+        
+                    <!-- Time picker-->
+                    <div class="form-group">
+                        <label for="TimePicker">Hora:</label>
+                        <!-- Time picker GUI-->
+                        <input class="d-flex justify-content-center m-auto" id="timepicker" width="276" />
+                        <script>
+                            $('#timepicker').timepicker();
+                        </script>
+                    </div>
+        
+                    <!-- Needs selector -->
+                    <div class="form-group">
+                        <label>Necesidades:</label><br>
+                        <div class="d-flex justify-content-center">
+                            <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
+                                <label class="btn btn-outline-primary m-2 text-center">
+                                    <input type="radio" name="options" id="clean" autocomplete="off">Limpiar
+                                </label>
+                            </div>
+                            <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
+                                <label class="btn btn-outline-primary m-2 text-center">
+                                    <input type="radio" name="options" id="cook" autocomplete="off" checked>Cocinar
+                                </label>
+                            </div><br>
+                            <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
+                                <label class="btn btn-outline-primary m-2 text-center">
+                                    <input type="radio" name="options" id="wash" autocomplete="off" checked>Lavar
+                                </label>
+                            </div>
+                            <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
+                                <label class="btn btn-outline-primary m-2 text-center">
+                                    <input type="radio" name="options" id="iron" autocomplete="off" checked>Planchar
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Aditional comments -->
+                    <div class="form-group">
+                        <label for="AditionalComment">Comentario</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                    </div>
+        
+                    <!-- Price -->
+                    <h5>TOTAL: S/.65.00</h1>
+        
+                    <!-- Submit Button-->
+                    <button type="submit" class="text-center mx-auto btn btn-primary">Solicitar</button>
+                </form>
+
         </div>
-
-        <!-- Aditional comments -->
-        <div class="form-group">
-            <label for="AditionalComment">Comentario</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
         </div>
-
-        <!-- Price -->
-        <h5>TOTAL: S/.65.00</h1>
-
-        <!-- Submit Button-->
-        <button type="submit" class="text-center mx-auto btn btn-primary">Solicitar</button>
-    </form>
+</section>
     
     <!-- Bootstrap script -->
     <script
