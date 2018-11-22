@@ -7,13 +7,15 @@
     <title>Manos - Nuevo Servicio</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/custom.css" />
+    <link rel="shortcut icon" href="../images/manos.ico " />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="../images/manos.ico " />
     <link
       rel="apple-touch-icon"
       sizes="128x128"
@@ -35,108 +37,110 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="shadow p-3 mb-3 fixed-top bg-white rounded navbar navbar-expand-md navbar-light bg-light mb-3">
+    <nav class="shadow p-3 mb-3 fixed-top bg-white rounded navbar navbar-expand-xl navbar-light bg-light mb-3">
             <div class="m-auto container">
-                    <button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#clientNavBar">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-            <a class="m-auto navbar-brand" href="#">
-                <img style="width:150px" src="../images/manos.png"/>
-                </a>
-            <div class="collapse navbar-collapse" id="clientNavBar">
-                <ul class="nav navbar-nav">
+                <button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#clientNavBar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="m-auto navbar-dark" href="#">
+                    <img style="width:150px" src="../images/manos.png"/>
+                    </a>
+                <div class="collapse navbar-collapse" id="clientNavBar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <div class="progress w-50 m-2" style="height:1px;">
+                                <div class="progress-bar bg-dark" style="width:100%"></div>
+                            </div>
+                        </li>
+                    <li><a class="m-3" href="#"><i class="fas fa-cog mr-2"></i>Ajuste de cuenta</a></li>
                     <li>
                         <div class="progress w-50 m-2" style="height:1px;">
-                            <div class="progress-bar bg-secondary" style="width:100%"></div>
+                            <div class="progress-bar bg-dark" style="width:100%"></div>
                         </div>
                     </li>
-                <li><a class="m-3" href="#intro">Ajuste de cuenta</a></li>
-                <li>
-                    <div class="progress w-50 m-2" style="height:1px;">
-                        <div class="progress-bar bg-secondary" style="width:100%"></div>
-                    </div>
-                </li>
-                <li><a class="m-3" href="#howToWork">Mis direcciones</a></li>
-                <li>
+                    <li><a class="m-3" href="#howToWork"><i class="fas fa-home mr-2"></i>Mis direcciones</a></li>
+                    <li>
+                            <div class="progress w-50 m-2" style="height:1px;">
+                                <div class="progress-bar bg-dark" style="width:100%"></div>
+                            </div>
+                        </li>
+                    <li><a class="m-3" href="#packages"><i class="fas fa-history mr-2"></i>Historial de servicios</a></li>
+                    <li>
+                            <div class="progress w-50 m-2" style="height:1px;">
+                                <div class="progress-bar bg-dark" style="width:100%"></div>
+                            </div>
+                        </li>
+                    <li><a class="m-3" href="#services"><i class="fas fa-dollar-sign mr-2"></i>Crédito</a></li>
+                    <li>
+                            <div class="progress w-50 m-2" style="height:1px;">
+                                <div class="progress-bar bg-dark" style="width:100%"></div>
+                            </div>
+                        </li>
+                    <li><a class="m-3" href="#testimonials"><i class="fas fa-percent mr-2"></i>Promociones</a></li>
+                    <li>
+                            <div class="progress w-50 m-2" style="height:1px;">
+                                <div class="progress-bar bg-dark" style="width:100%"></div>
+                            </div>
+                        </li>
+                    <li><a class="m-3" href="#testimonials"><i class="fas fa-question mr-2"></i>Preguntas frecuentes</a></li>
+                    <li>
+                            <div class="progress w-50 m-2" style="height:1px;">
+                                <div class="progress-bar bg-dark" style="width:100%"></div>
+                            </div>
+                        </li>
+                    <li><a class="m-3" href="#testimonials"><i class="fas fa-headset mr-2"></i>Ayuda</a></li>
+                    <li>
                         <div class="progress w-50 m-2" style="height:1px;">
-                            <div class="progress-bar bg-secondary" style="width:100%"></div>
+                            <div class="progress-bar bg-dark" style="width:100%"></div>
                         </div>
                     </li>
-                <li><a class="m-3" href="#packages">Historial de servicios</a></li>
-                <li>
-                        <div class="progress w-50 m-2" style="height:1px;">
-                            <div class="progress-bar bg-secondary" style="width:100%"></div>
-                        </div>
-                    </li>
-                <li><a class="m-3" href="#services">Crédito</a></li>
-                <li>
-                        <div class="progress w-50 m-2" style="height:1px;">
-                            <div class="progress-bar bg-secondary" style="width:100%"></div>
-                        </div>
-                    </li>
-                <li><a class="m-3" href="#testimonials">Promociones</a></li>
-                <li>
-                        <div class="progress w-50 m-2" style="height:1px;">
-                            <div class="progress-bar bg-secondary" style="width:100%"></div>
-                        </div>
-                    </li>
-                <li><a class="m-3" href="#testimonials">Preguntas frecuentes</a></li>
-                <li>
-                        <div class="progress w-50 m-2" style="height:1px;">
-                            <div class="progress-bar bg-secondary" style="width:100%"></div>
-                        </div>
-                    </li>
-                <li><a class="m-3" href="#testimonials">Ayuda</a></li>
-                <li>
-                    <div class="progress w-50 m-2" style="height:1px;">
-                        <div class="progress-bar bg-secondary" style="width:100%"></div>
-                    </div>
-                </li>
-                <li><a class="m-3 text-danger" href="#testimonials">Cerrar sesión</a></li>
-                </ul>
-            </div>
-            </div>
-        </nav><br><br><br><br>
+                    <li><a class="m-3 text-danger" href="#testimonials"><i class="fas fa-sign-out-alt mr-2"></i>Cerrar sesión</a></li>
+                    </ul>
+                </div>
+                </div>
+            </nav><br><br><br><br>
 
     <!-- Second navbar -->
     <div class="text-center">
             <a href="book.html"><button class="w-25 btn btn-outline-primary m-2 text-center" type="button">
               Nuevo<br />Servicio
             </button></a>
-            <button class="w-25 btn btn-outline-primary active m-2 text-center" type="button">
+            <button class="w-25 btn btn-outline-primary active m-2 text-center border-dark" type="button">
               Estado de<br />servicios
             </button>
           </div>
 
     <!-- Services -->
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Card 1 -->
+            <div class="card w-75 m-auto text-center border-dark" style="max-height: 900px;">
+            <!-- Card Image -->
+            <img
+                class="card-img-top"
+                src="https://source.unsplash.com/300x125/?cleaning,washing"
+                alt="Apartment"
+            />
 
-    <!-- Card 1 -->
-    <div class="card w-75 m-auto text-center" style="max-height: 900px;">
-      <!-- Card Image -->
-      <img
-        class="card-img-top"
-        src="https://source.unsplash.com/300x125/?cleaning,washing"
-        alt="Apartment"
-      />
-
-      <!-- Card Text overlay -->
-      <div class="card-img-overlay">
-        <h5 class="card-title text-light">Av. Pezet 543 Dpto 1303</h4>
-        <p class="card-tex text-light">San Isidro<br />S/.65.00</p>
-      </div>
-      <div class="card-body">
-          <table class="table table-sm">
-              <tr>
-                  <td>Lunes 5 de noviembre,<br>2018</td>
-                  <td>De 11:30 am.<br>a 4:30 pm.</td>
-              </th>
-          </table>
-          <a href="#" class="w-75 btn btn-primary">Seleccionar Manos</a>
-        </div>
-    </div>
+            <!-- Card Text overlay -->
+            <div class="card-img-overlay">
+                <h5 class="card-title text-light">Av. Pezet 543 Dpto 1303</h4>
+                <p class="card-tex text-light">San Isidro<br />S/.65.00</p>
+            </div>
+            <div class="card-body">
+                <table class="table table-sm">
+                    <tr>
+                        <td>Lunes 5 de noviembre,<br>2018</td>
+                        <td>De 11:30 am.<br>a 4:30 pm.</td>
+                    </th>
+                </table>
+                <a href="#" class="w-75 btn btn-secondary border-dark">Seleccionar Manos</a>
+                </div>
+            </div>
     <br>
-    <!-- Card 2 -->
-    <div class="card border-secondary w-75 m-auto text-center" style="max-height: 900px;">
+    <!-- Card 2 --></div>
+        <div class="col-md-6">
+    <div class="card border-dark w-75 m-auto text-center" style="max-height: 900px;">
             <!-- Card Image -->
             <img
               class="card-img-top"
@@ -158,9 +162,9 @@
                         <p>De 9:30 am.<br>a 4:30 pm.</p>
                     </div>
                     </div>
-                <a href="#" class="w-75 btn btn-secondary disabled">En espera</a>
+                <a href="#" class="w-75 btn btn-dark disabled">En espera</a>
               </div>
-          </div><br>
+          </div></div><br>
     <!-- Bootstrap script -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
