@@ -34,7 +34,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="shadow p-3 fixed-top bg-white rounded navbar navbar-expand-sm navbar-light bg-light mb-3">
+    <nav class="shadow p-3 fixed-top bg-white rounded navbar navbar-expand-xl navbar-light bg-light mb-3">
         <div class="container">
             <a class="m-auto navbar-brand" href="#">
                 <img style="width:150px" src="../images/manos.png"/>
@@ -45,55 +45,57 @@
             <div class="collapse navbar-collapse" id="clientNavBar">
             <ul class="navbar-nav ml-auto">
                 <li class="navbar-item">
-                    <a class="navbar-link" href="settings.html">Ajuste de cuenta</a>
+                    <a class="navbar-link" href="settings.html"><i class="fas fa-cog"></i>Ajuste de cuenta</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="navbar-link" href="addresses.html">Mis direcciones</a>
+                    <a class="navbar-link" href="addresses.html"><i class="fas fa-home"></i>Mis direcciones</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="navbar-link" href="history.html">Historial de servicios</a>
+                    <a class="navbar-link" href="history.html"><i class="fas fa-history"></i>Historial de servicios</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="navbar-link" href="wallet.html">Crédito</a>
+                    <a class="navbar-link" href="wallet.html"><i class="fas fa-dollar-sign"></i>Crédito</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="navbar-link" href="promo.html">Promociones</a>
+                    <a class="navbar-link" href="promo.html"><i class="fas fa-percent"></i>Promociones</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="navbar-link" href="client/faqs.html">Preguntas frecuentes</a>
+                    <a class="navbar-link" href="client/faqs.html"><i class="fas fa-question"></i>Preguntas frecuentes</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="navbar-link" href="client/help.html">Ayuda</a>
+                    <a class="navbar-link" href="client/help.html"><i class="fas fa-headset"></i>Ayuda</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="nvabar-link text-danger" href="../index.html">Cerrar sesión</a>
+                    <a class="nvabar-link text-danger" href="../index.html"><i class="fas fa-sign-out-alt"></i>Cerrar sesión</a>
                 </li>
             </ul>
         </div>
         </div>
     </nav>
 
-    <!-- NavBar for large and medium screens-->
     <section id="Main_section" style="padding-top:100px;">
         <div class="row">
-            <div class="col-lg-1 d-none d-lg-block">
-                <div></div>
+            <div class="col-lg-3 col-md-2 d-none d-lg-block">
+                <div class="jumbotron text-center">
+                    <h4>Paolo Bejarano</h4>
+                </div>
                 <div>
                     <ul>
-                        <li>Ajustes de cuenta</li>
-                        <li>Mis direcciones</li>
-                        <li>Historial de servicios</li>
-                        <li>Crédito</li>
-                        <li>Promociones</li>
-                        <li>Preguntas frecuentes</li>
-                        <li>Ayuda</li>
-                        <li>Cerrar sesión</li>
+                        <li><a href="client/settings.html"><i class="fas fa-cog"></i>Ajustes de cuenta</a></li>
+                        <li><a href="client/addresses.html"><i class="fas fa-home"></i>Mis direcciones</a></li>
+                        <li><a href="client/history.html"><i class="fas fa-history"></i>Historial de servicios</a></li>
+                        <li><a href="client/wallet.html"><i class="fas fa-dollar-sign"></i>Crédito</a></li>
+                        <li><a href="client/promo.html"><i class="fas fa-percent"></i>Promociones</a></li>
+                        <li><a href="client/faqs.html"><i class="fas fa-question"></i>Preguntas frecuentes</a></li>
+                        <li><a href="client/help.html"><i class="fas fa-headset"></i>Ayuda</a></li>
+                        <li><a href="#" class="text-danger"><i class="fas fa-sign-out-alt"></i>Cerrar sesión</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-11">
+            <div class="col-lg-9 col-md-10 justify-content-center">
                 <!-- Second navbar -->
-            <div class="text-center containter mt-6">
+                <div class="container justify-content-center"></div>
+            <div class="text-center container m-auto">
                 <button class="w-25 btn btn-primary m-2 text-center" type="button">
                     Nuevo<br />Servicio
                 </button>
@@ -101,7 +103,7 @@
                     Estado de<br />servicios
                 </button></a>
                 </div>
-                <form class="mr-auto ml-auto mt-3 float-center w-75">
+                <form class="mr-auto ml-auto mt-3 float-center w-90">
                     <!-- Address Form -->
                     <div class="form-group">
                         <label for="AddressSelect">Dirección:</label>
@@ -190,7 +192,7 @@
                     <button type="submit" class="text-center mx-auto btn btn-primary">Solicitar</button>
                 </form>
 
-        </div>
+        </div></div>
         </div>
 </section>
     
