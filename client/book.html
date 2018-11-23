@@ -31,13 +31,20 @@
     <!-- Navbar -->
     <nav class="shadow p-3 mb-3 fixed-top bg-white rounded navbar navbar-expand-xl navbar-light bg-light mb-3">
         <div class="m-auto container">
+            <a class="m-auto navbar-dark" href="#">
+                <img style="width:150px" src="../images/manos.png"/>
+            </a>
+        </div>
+    </nav>
+    <nav class="d-md-none shadow p-3 mb-3 fixed-top bg-white rounded navbar navbar-expand-xl navbar-light bg-light mb-3">
+        <div class="m-auto container">
             <button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#clientNavBar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="m-auto navbar-dark" href="#">
                 <img style="width:150px" src="../images/manos.png"/>
-                </a>
-            <div class="collapse navbar-collapse" id="clientNavBar">
+            </a>
+            <div class="collapse navbar-collapse d-lg-none" id="clientNavBar">
                 <ul class="nav navbar-nav">
                     <li>
                         <div class="progress w-50 m-2" style="height:1px;">
@@ -94,8 +101,9 @@
 
     <section id="Main_section" style="padding-top:100px;">
         <div class="row">
-            <div class="col-lg-3 col-md-2 d-none d-lg-block">
+            <div class="col-xl-3 col-lg-3 col-md-4 d-none d-md-block">
                 <div class="jumbotron text-center">
+                    <i class="fas fa-user-circle fa-4x"></i>
                     <h4>Paolo Bejarano</h4>
                 </div>
                 <div>
@@ -111,7 +119,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-9 col-md-10 justify-content-center">
+            <div class="col-xl-9 col-lg-9 col-md-8 justify-content-center">
                 <!-- Second navbar -->
                 <div class="container justify-content-center"></div>
             <div class="text-center container m-auto">
@@ -122,7 +130,7 @@
                     Estado de<br />servicios
                 </button></a>
                 </div>
-                <form class="mr-auto ml-auto mt-3 float-center w-90">
+                <form class="m-auto mt-3 float-center w-90">
                     <!-- Address Form -->
                     <div class="form-group">
                         <label for="AddressSelect">Dirección:</label>
