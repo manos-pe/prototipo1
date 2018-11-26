@@ -101,28 +101,27 @@
 
     <section id="Main_section" class="pt-5">
         <div class="row pt-4">
-            <div class="col-xl-3 col-lg-3 col-md-4 d-none d-md-block">
-                <div class="jumbotron text-center">
-                    <i class="fas fa-user-circle fa-4x"></i>
-                    <h4>Paolo Bejarano</h4>
-                </div>
-                <div>
-                    <ul>
-                        <li><a href="client/settings.html"><i class="fas fa-cog"></i>Ajustes de cuenta</a></li>
-                        <li><a href="client/addresses.html"><i class="fas fa-home"></i>Mis direcciones</a></li>
-                        <li><a href="client/history.html"><i class="fas fa-history"></i>Historial de servicios</a></li>
-                        <li><a href="client/wallet.html"><i class="fas fa-dollar-sign"></i>Crédito</a></li>
-                        <li><a href="client/promo.html"><i class="fas fa-percent"></i>Promociones</a></li>
-                        <li><a href="client/faqs.html"><i class="fas fa-question"></i>Preguntas frecuentes</a></li>
-                        <li><a href="client/help.html"><i class="fas fa-headset"></i>Ayuda</a></li>
-                        <li><a href="#" class="text-danger"><i class="fas fa-sign-out-alt"></i>Cerrar sesión</a></li>
+            <nav class="col-xl-3 col-lg-3 col-md-4 d-none d-md-block sidebar">
+                <div class="sidebar-sticky">
+                    <div class="jumbotron text-center">
+                        <i class="fas fa-user-circle fa-4x"></i>
+                        <h4>Paolo Bejarano</h4>
+                    </div>
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-item"><a class="nav-link" href="client/settings.html"><i class="fas fa-cog px-2"></i>Ajustes de cuenta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="client/addresses.html"><i class="fas fa-home px-2"></i>Mis direcciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="client/history.html"><i class="fas fa-history px-2"></i>Historial de servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="client/wallet.html"><i class="fas fa-dollar-sign px-2"></i>Crédito</a></li>
+                        <li class="nav-item"><a class="nav-link" href="client/promo.html"><i class="fas fa-percent px-2"></i>Promociones</a></li>
+                        <li class="nav-item"><a class="nav-link"href="client/faqs.html"><i class="fas fa-question px-2"></i>Preguntas frecuentes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="client/help.html"><i class="fas fa-headset px-2"></i>Ayuda</a></li>
+                        <li class="nav-item"><a class="nav-link text-danger" href="#"><i class="fas fa-sign-out-alt px-2"></i>Cerrar sesión</a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="col-xl-9 col-lg-9 col-md-8 justify-content-center pt-2">
+            </nav>
+            <div class="col-xl-9 col-lg-9 col-md-8 ml-sm-auto justify-content-center pt-2">
                 <!-- Second navbar -->
-                <div class="container justify-content-center"></div>
-            <div class="text-center container m-auto">
+                <div class="text-center container m-auto pt-3">
                 <button class="w-25 btn btn-primary bg-gradient-primary m-2 text-center" type="button">
                     Nuevo<br />Servicio
                 </button>
@@ -130,95 +129,96 @@
                     Estado de<br />servicios
                 </button></a>
                 </div>
-                <form class="m-auto mt-3 float-center w-90">
-                    <!-- Address Form -->
-                    <div class="form-group">
-                        <label for="AddressSelect">Dirección:</label>
-                        <select class="form-control" id="AddressSelect">
-                            <option>Departamento</option>
-                            <option>Casa</option>
-                            <option><a href="adresses.html">Agregar Dirección</a></option>
-                        </select>
-                    </div>
-        
-                    <!-- Pack Form -->
-                    <div class="form-group">
-                        <label>Paquete:</label><br>
-                        <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
-                            <label class="btn btn-outline-primary m-2 text-center">
-                                <input type="radio" name="options" id="3horas" autocomplete="off" checked> 3 Horas
-                            </label>
-                            <label class="btn btn-outline-primary m-2 text-center">
-                                <input type="radio" name="options" id="5horas" autocomplete="off">5 Horas
-                            </label>
-                            <label class="btn btn-outline-primary m-2 text-center">
-                                <input type="radio" name="options" id="8horas" autocomplete="off">8 Horas
-                            </label>
+                <div class="container">
+                    <form class="m-auto mt-3 float-center w-80 px-4">
+                        <!-- Address Form -->
+                        <div class="form-group">
+                            <label for="AddressSelect">Dirección:</label>
+                            <select class="form-control" id="AddressSelect">
+                                <option>Departamento</option>
+                                <option>Casa</option>
+                                <option><a href="adresses.html">Agregar Dirección</a></option>
+                            </select>
                         </div>
-                    </div>
-        
-                    <!-- Date picker-->
-                    <div class="form-group">
-                        <label for="datepicker">Fecha:</label><br>
-                        <!-- Date picker GUI -->
-                        <input class="text-primary m-auto" id="datepicker" width="276" />
-                        <script>
-                            $('#datepicker').datepicker({
-                            uiLibrary: 'bootstrap4'
-                        });
-                        </script>
-                    </div>
-        
-                    <!-- Time picker-->
-                    <div class="form-group">
-                        <label for="TimePicker">Hora:</label>
-                        <!-- Time picker GUI-->
-                        <input class="d-flex justify-content-center m-auto" id="timepicker" width="276" />
-                        <script>
-                            $('#timepicker').timepicker();
-                        </script>
-                    </div>
-        
-                    <!-- Needs selector -->
-                    <div class="form-group">
-                        <label>Necesidades:</label><br>
-                        <div class="d-flex justify-content-center">
+            
+                        <!-- Pack Form -->
+                        <div class="form-group">
+                            <label>Paquete:</label><br>
                             <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
                                 <label class="btn btn-outline-primary m-2 text-center">
-                                    <input type="radio" name="options" id="clean" autocomplete="off">Limpiar
+                                    <input type="radio" name="options" id="3horas" autocomplete="off" checked> 3 Horas
                                 </label>
-                            </div>
-                            <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
                                 <label class="btn btn-outline-primary m-2 text-center">
-                                    <input type="radio" name="options" id="cook" autocomplete="off" checked>Cocinar
+                                    <input type="radio" name="options" id="5horas" autocomplete="off">5 Horas
                                 </label>
-                            </div><br>
-                            <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
                                 <label class="btn btn-outline-primary m-2 text-center">
-                                    <input type="radio" name="options" id="wash" autocomplete="off" checked>Lavar
-                                </label>
-                            </div>
-                            <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
-                                <label class="btn btn-outline-primary m-2 text-center">
-                                    <input type="radio" name="options" id="iron" autocomplete="off" checked>Planchar
+                                    <input type="radio" name="options" id="8horas" autocomplete="off">8 Horas
                                 </label>
                             </div>
                         </div>
+            
+                        <!-- Date picker-->
+                        <div class="form-group">
+                            <label for="datepicker">Fecha:</label><br>
+                            <!-- Date picker GUI -->
+                            <input class="text-primary m-auto" id="datepicker" width="276" />
+                            <script>
+                                $('#datepicker').datepicker({
+                                uiLibrary: 'bootstrap4'
+                            });
+                            </script>
+                        </div>
+            
+                        <!-- Time picker-->
+                        <div class="form-group">
+                            <label for="TimePicker">Hora:</label>
+                            <!-- Time picker GUI-->
+                            <input class="d-flex justify-content-center m-auto" id="timepicker" width="276" />
+                            <script>
+                                $('#timepicker').timepicker();
+                            </script>
+                        </div>
+            
+                        <!-- Needs selector -->
+                        <div class="form-group">
+                            <label>Necesidades:</label><br>
+                            <div class="d-flex justify-content-center">
+                                <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
+                                    <label class="btn btn-outline-primary m-2 text-center">
+                                        <input type="checkbox" name="options" id="clean" autocomplete="off">Limpiar
+                                    </label>
+                                </div>
+                                <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
+                                    <label class="btn btn-outline-primary m-2 text-center">
+                                        <input type="checkbox" name="options" id="cook" autocomplete="off" checked>Cocinar
+                                    </label>
+                                </div><br>
+                                <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
+                                    <label class="btn btn-outline-primary m-2 text-center">
+                                        <input type="checkbox" name="options" id="wash" autocomplete="off" checked>Lavar
+                                    </label>
+                                </div>
+                                <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
+                                    <label class="btn btn-outline-primary m-2 text-center">
+                                        <input type="checkbox" name="options" id="iron" autocomplete="off" checked>Planchar
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Aditional comments -->
+                        <div class="form-group">
+                            <label for="AditionalComment">Comentario</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                        </div>
+            
+                        <!-- Price -->
+                        <h5>TOTAL: S/.65.00</h1>
+            
+                        <!-- Submit Button-->
+                        <button type="submit" class="text-center mx-auto btn btn-primary">Solicitar</button>
+                    </form>
                     </div>
-        
-                    <!-- Aditional comments -->
-                    <div class="form-group">
-                        <label for="AditionalComment">Comentario</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
-                    </div>
-        
-                    <!-- Price -->
-                    <h5>TOTAL: S/.65.00</h1>
-        
-                    <!-- Submit Button-->
-                    <button type="submit" class="text-center mx-auto btn btn-primary">Solicitar</button>
-                </form>
-
         </div></div>
         </div>
 </section>
