@@ -57,7 +57,9 @@
     <div
       class="card card-outline-secondary float-center mr-auto ml-auto mt-3 w-75"
     >
-      <div class="card-header"><h3 class="mb-0">Identificación</h3></div>
+      <div class="card-header">
+        <h3 class="mb-0 text-primary">Identificación</h3>
+      </div>
       <div class="card-body">
         <form
           class="form"
@@ -68,7 +70,9 @@
           method="POST"
         >
           <div class="form-group">
-            <label for="uname1">Correo electrónico</label>
+            <label for="uname1"
+              ><h5 class="text-dark">Correo electrónico</h5></label
+            >
             <input
               type="text"
               class="form-control"
@@ -76,10 +80,9 @@
               id="uname1"
               required=""
             />
-            <div class="invalid-feedback">Correo electrónico</div>
           </div>
           <div class="form-group">
-            <label>Contraseña</label>
+            <label><h5 class="text-dark">Contraseña</h5></label>
             <input
               type="password"
               class="form-control"
@@ -87,7 +90,6 @@
               required=""
               autocomplete="new-password"
             />
-            <div class="invalid-feedback">Contraseña</div>
           </div>
           <div class="form-check small">
             <label class="form-check-label">
@@ -95,13 +97,13 @@
               <span>Recordar en está computadora</span>
             </label>
           </div>
-          <a class="btn btn-link btn-lg mt-3" href="client/book.html">
-            Recuperar contraseña
+          <a class="btn btn-link  mt-3" href="client/book.html">
+            Recuperar<br />contraseña
           </a>
-          <a class="btn btn-primary btn-lg mt-3" href="client/book.html">
+          <a class="btn btn-primary mt-3" href="client/book.html">
             Iniciar sesión </a
           ><br />
-          <a class="btn btn-link btn-lg mt-3" href="register.html">
+          <a class="btn btn-link  mt-3" href="register.html">
             ¿No tienes cuenta?<br />Créate una ahora
           </a>
         </form>

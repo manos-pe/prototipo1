@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Manos - Ajustes de cuenta</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/custom.css" />
+    <link rel="shortcut icon" href="../images/manos.ico " />
+    <link rel="apple-touch-icon" sizes="128x128" href="../images/manos_logo.png" />
+    <link rel="icon" sizes="192x192" href="../images/manos_logo.png" />
+
+    <!-- Scripts for Date Picker GUI -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="d-none d-md-block shadow p-4 mb-2 fixed-top bg-white navbar navbar-light bg-light">
+        <div class="m-auto container p-1">
+            <a class="m-auto navbar-dark" href="#">
+                <img style="width:150px" src="../images/manos.png" />
+            </a>
+        </div>
+    </nav>
+    <nav class="d-md-none shadow py-3 mb-2 fixed-top bg-white navbar navbar-expand-xl navbar-light bg-light mb-3">
+        <div class="m-auto container">
+            <button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#clientNavBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="m-auto navbar-dark" href="#">
+                <img style="width:150px" src="../images/manos.png" />
+            </a>
+            <div class="collapse navbar-collapse d-lg-none" id="clientNavBar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <div class="progress w-50 m-2" style="height:1px;">
+                            <div class="progress-bar bg-dark" style="width:100%"></div>
+                        </div>
+                    </li>
+                    <li><a class="m-3" href="settings.html"><i class="fas fa-cog mr-2"></i>Ajuste de cuenta</a></li>
+                    <li>
+                        <div class="progress w-50 m-2" style="height:1px;">
+                            <div class="progress-bar bg-dark" style="width:100%"></div>
+                        </div>
+                    </li>
+                    <li><a class="m-3" href="#howToWork"><i class="fas fa-home mr-2"></i>Mis direcciones</a></li>
+                    <li>
+                        <div class="progress w-50 m-2" style="height:1px;">
+                            <div class="progress-bar bg-dark" style="width:100%"></div>
+                        </div>
+                    </li>
+                    <li><a class="m-3" href="#packages"><i class="fas fa-history mr-2"></i>Historial de servicios</a></li>
+                    <li>
+                        <div class="progress w-50 m-2" style="height:1px;">
+                            <div class="progress-bar bg-dark" style="width:100%"></div>
+                        </div>
+                    </li>
+                    <li><a class="m-3" href="#services"><i class="fas fa-dollar-sign mr-2"></i>Crédito</a></li>
+                    <li>
+                        <div class="progress w-50 m-2" style="height:1px;">
+                            <div class="progress-bar bg-dark" style="width:100%"></div>
+                        </div>
+                    </li>
+                    <li><a class="m-3" href="#testimonials"><i class="fas fa-percent mr-2"></i>Promociones</a></li>
+                    <li>
+                        <div class="progress w-50 m-2" style="height:1px;">
+                            <div class="progress-bar bg-dark" style="width:100%"></div>
+                        </div>
+                    </li>
+                    <li><a class="m-3" href="faqs.html"><i class="fas fa-question mr-2"></i>Preguntas frecuentes</a></li>
+                    <li>
+                        <div class="progress w-50 m-2" style="height:1px;">
+                            <div class="progress-bar bg-dark" style="width:100%"></div>
+                        </div>
+                    </li>
+                    <li><a class="m-3" href="#testimonials"><i class="fas fa-headset mr-2"></i>Ayuda</a></li>
+                    <li>
+                        <div class="progress w-50 m-2" style="height:1px;">
+                            <div class="progress-bar bg-dark" style="width:100%"></div>
+                        </div>
+                    </li>
+                    <li><a class="m-3 text-danger" href="#testimonials"><i class="fas fa-sign-out-alt mr-2"></i>Cerrar
+                            sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="Main_section" class="pt-5">
+        <div class="row pt-4">
+            <nav class="col-xl-3 col-lg-3 col-md-4 d-none d-md-block sidebar border-right">
+                <div class="sidebar-sticky">
+                    <div class="jumbotron text-center bg-gradient-primary text-white">
+                        <i class="fas fa-user-circle fa-4x"></i>
+                        <h4>Paolo Bejarano</h4>
+                        <h6>Crédito: S/100.00</h6>
+                        <h6>1 solicitud - 10 servicios</h6>
+                    </div>
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-item border-bottom"><a class="nav-link" href="settings.html"><i class="fas fa-cog px-2"></i>Ajustes
+                                de cuenta</a></li>
+                        <li class="nav-item border-bottom"><a class="nav-link" href="addresses.html"><i class="fas fa-home px-2"></i>Mis
+                                direcciones</a></li>
+                        <li class="nav-item border-bottom"><a class="nav-link" href="history.html"><i class="fas fa-history px-2"></i>Historial
+                                de servicios</a></li>
+                        <li class="nav-item border-bottom"><a class="nav-link" href="wallet.html"><i class="fas fa-dollar-sign px-2"></i>Crédito</a></li>
+                        <li class="nav-item border-bottom"><a class="nav-link" href="promo.html"><i class="fas fa-percent px-2"></i>Promociones</a></li>
+                        <li class="nav-item border-bottom bg-light"><a class="nav-link" href="faqs.html"><i class="fas fa-question px-2"></i>Preguntas
+                                frecuentes</a></li>
+                        <li class="nav-item border-bottom"><a class="nav-link" href="help.html"><i class="fas fa-headset px-2"></i>Ayuda</a></li>
+                        <li class="nav-item"><a class="nav-link text-danger" href="#"><i class="fas fa-sign-out-alt px-2"></i>Cerrar
+                                sesión</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="col-xl-9 col-lg-9 col-md-8 ml-sm-auto justify-content-center pt-2">
+                <!-- Content -->
+                <div class="content pt-4 pb-2 text-dark">
+                    <h3 class="text-center">Preguntas frecuentes</h3>
+                    <div class="progress w-75 m-auto mt-2" style="height:2px;">
+                        <div class="progress-bar bg-dark" style="width:100%"></div>
+                    </div>
+                    <div class="pt-3 px-5" id="accordion">
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#collapse1" data-parent="#accordion" data-toggle="collapse">
+                                    ¿QUÉ ES MANOS?
+                                </a>
+                            </div>
+
+                            <div id="collapse1" class="collapse show">
+                                <div class="card-body">
+                                    Es una plataforma de servicios generales a domicilio especializada en limpieza por
+                                    días y horas en donde podrás seleccionar a una persona previamente calificada para
+                                    llevar a cabo los labores en tu domicilio u oficina sin salir de la misma. Nuestros
+                                    Manos son seleccionados a través de un proceso que incluye la verificación de
+                                    antecedentes, validación de documentos , referencias y entrevista.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#collapse2" data-parent="#accordion" data-toggle="collapse">
+                                    ¿CÓMO FUNCIONA MANOS?
+                                </a>
+                            </div>
+
+                            <div id="collapse2" class="collapse">
+                                <div class="card-body">
+                                    Reserva a través de nuestra web el servicio que necesites.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#collapse3" data-parent="#accordion" data-toggle="collapse">
+                                    ¿DÓNDE OPERAMOS ACTUALMENTE?
+                                </a>
+                            </div>
+                            <div id="collapse3" class="collapse">
+                                <div class="card-body">
+                                    Lima Metropolitana.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#collapse4" data-parent="#accordion" data-toggle="collapse">
+                                    ¿TENGO QUE FIRMAR ALGÚN ACUERDO?
+                                </a>
+                            </div>
+                            <div id="collapse4" class="collapse">
+                                <div class="card-body">
+                                    Al usar los servicios de MANOS estas aceptando los términos y condiciones que se
+                                    encuentran en : www.manos.pe/TyC
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#collapse5" data-parent="#accordion" data-toggle="collapse">
+                                    ¿POR QUÉ USAR MANOS?
+                                </a>
+                            </div>
+                            <div id="collapse5" class="collapse">
+                                <div class="card-body">
+                                    Buscamos que no tengas que salir de tu casa u oficina para pedir servicios para la
+                                    misma. Nuestro servicio es rápido, efectivo y sobre todo de confianza.
+                                    Cada Manos pasa por un riguroso proceso de selección en el que mediante socios
+                                    medidores de riesgo evaluamos todos los antecedentes de la persona.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a href="#collapse6" data-parent="#accordion" data-toggle="collapse">
+                                    ¿PUEDO CAMBIAR DE FECHA O CANCELAR UNA RESERVA?
+                                </a>
+                            </div>
+                            <div id="collapse6" class="collapse">
+                                <div class="card-body">
+                                    Sí, se puede efectuar sin cobro alguno antes de las 24 horas del inicio del mismo.
+                                    Si quieres cancelar la reserva también se hace con 24 horas de anticipación sin
+                                    recargo mediante nuestros canales de atención.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- Bootstrap script -->
+
+    <script type="text/javascript" src="../bower_components/wickedpicker/src/wickedpicker.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
