@@ -47,10 +47,10 @@
   </nav>
   <br /><br /><br />
 
-  <!-- Login Form -->
-  <div class="card card-outline-secondary float-center mr-auto ml-auto mt-5 w-75" style="max-width: 500px;">
+  <!-- Login Form for users-->
+  <div class="card card-outline-secondary float-center mr-auto ml-auto mt-4 w-75" style="max-width: 500px;">
     <div class="card-header">
-      <h4 class="mb-0 text-primary">Identificación</h4>
+      <h4 class="mb-0 text-primary">Inicio de sesión para usuarios</h4>
     </div>
     <div class="card-body">
       <form class="form" role="form" autocomplete="off" id="loginForm" novalidate="" method="POST">
@@ -82,12 +82,51 @@
         </a>
       </form>
     </div>
-    <!-- /card-body -->
   </div>
-  <!-- /form card login -->
+
+  <!-- Collapsable Login Form for workers -->
+  <div class="card float-center mr-auto ml-auto mt-4 w-75" style="max-width: 500px;">
+    <a href="#loginform" data-toggle="collapse">
+      <div class="card-header bg-gradient-secondary pb-1 pt-2">
+        <h4 class="text-white">Inicio de sesión para Manos</h4>
+      </div>
+    </a>
+    <div id="loginform" class="collapse">
+      <div class="card-body">
+        <form class="form" role="form" autocomplete="off" id="loginForm" novalidate="" method="POST">
+          <div class="form-group">
+            <label for="uname1">
+              <h6 class="text-dark">Correo electrónico</h6>
+            </label>
+            <input type="text" class="form-control" name="uname1" id="uname1" required="" />
+          </div>
+          <div class="form-group">
+            <label>
+              <h6 class="text-dark">Contraseña</h6>
+            </label>
+            <input type="password" class="form-control" id="pwd1" required="" autocomplete="new-password" />
+          </div>
+          <div class="form-check small">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" />
+              <span>Recordar en este dispositivo</span>
+            </label>
+          </div>
+          <a class="btn btn-primary btn-block mt-3" href="worker/requests.html">
+            Iniciar sesión </a>
+          <a class="btn btn-outline-primary btn-block mt-3" href="register.html">
+            Registrarse
+          </a>
+          <a class="btn btn-link btn-block mt-3" href="client/book.html">
+            Recuperar contraseña
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer section -->
-  <footer class="footer text-white mt-5" style="background-color:#181818;">
+  <footer class="footer text-white mt-4" style="background-color:#181818;">
     <div class="container">
       <div class="row px-2 py-5">
         <div class="col-md-6 p-3">
