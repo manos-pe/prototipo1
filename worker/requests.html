@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+<!-- <![endif] -->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Manos - Nuevo Servicio</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/custom.css" />
+    <link rel="shortcut icon" href="../images/manos.ico " />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous" />
+    <link rel="apple-touch-icon" sizes="128x128" href="../images/manos_logo.png" />
+    <link rel="icon" sizes="192x192" href="../images/manos_logo.png" />
+
+    <!-- Scripts for Date Picker GUI -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="d-none d-md-block shadow p-4 mb-2 fixed-top bg-white navbar navbar-light bg-light">
+        <div class="m-auto container">
+            <a class="m-auto navbar-dark" href="#">
+                <img style="width:150px" src="../images/manos.png" />
+            </a>
+        </div>
+    </nav>
+    <nav class="d-md-none shadow py-3 mb-2 fixed-top bg-white navbar navbar-expand-xl navbar-light bg-light mb-3">
+        <div class="m-auto container">
+            <button class="custom-toggler navbar-toggler bg-gradient-primary p-2 rounded-circle" data-toggle="collapse"
+                data-target="#clientNavBar">
+                <span class="custom-toggler navbar-toggler-icon"></span>
+            </button>
+            <a class="m-auto navbar-dark" href="#">
+                <img style="width:150px" src="../images/manos.png" />
+            </a>
+            <div class="collapse navbar-collapse d-lg-none" id="clientNavBar">
+                <ul class="nav navbar-nav list-group list-group-flush">
+                    <li class="list-group-item border-dark"><a class="" href="settings.html"><i class="fas fa-cog mr-2"></i>Ajuste
+                            de cuenta</a></li>
+                    <li class="list-group-item border-dark"><a class="" href="history.html"><i class="fas fa-history mr-2"></i>Historial
+                            de
+                            servicios</a></li>
+                    <li class="list-group-item border-dark"><a class="" href="payments.html"><i class="fas fa-dollar-sign mr-2"></i>Pagos</a></li>
+                    <li class="list-group-item border-dark"><a class="" href="faqs.html"><i class="fas fa-question mr-2"></i>Preguntas
+                            frecuentes</a></li>
+                    <li class="list-group-item border-dark"><a class="" href="help.html"><i class="fas fa-headset mr-2"></i>Ayuda</a></li>
+                    <li class="list-group-item border-dark"><a class="text-danger" href="#testimonials"><i class="fas fa-sign-out-alt mr-2"></i>Cerrar
+                            sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="Main_section" class="pt-5">
+        <div class="row pt-4">
+            <nav class="col-xl-3 col-lg-3 col-md-4 d-none d-md-block sidebar border-right">
+                <div class="sidebar-sticky">
+                    <div class="text-center bg-gradient-primary text-white">
+                        <div class="container m-auto pt-5 pb-4 px-2">
+                            <a href="settings-edit-profile.html" class="text-white">
+                                <i class="fas fa-user-circle fa-4x m-1"></i>
+                            </a>
+                            <a class="text-white" href="settings.html">
+                                <h4>Paolo Bejarano</h4>
+                            </a>
+                            <a class="text-white" href="wallet.html">
+                                <h6>Crédito: S/100.00</h6>
+                            </a>
+                            <a href="bookings.html" class="text-white">
+                                <h6>1 solicitud</h6>
+                            </a>
+                            <a href="history.html" class="text-white">
+                                <h6>10 servicios pasados</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-flush flex-column">
+                        <li class="list-group-item list-group-item-action"><a href="settings.html"><i class="fas fa-cog px-2"></i>Ajustes
+                                de cuenta</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="history.html"><i class="fas fa-history px-2"></i>Historial
+                                de servicios</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="payments.html"><i class="fas fa-dollar-sign px-2"></i>Pagos</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="faqs.html"><i class="fas fa-question px-2"></i>Preguntas
+                                frecuentes</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="help.html"><i class="fas fa-headset px-2"></i>Ayuda</a></li>
+                        <li class="list-group-item list-group-item-action"><a class="text-danger" href="#"><i class="fas fa-sign-out-alt px-2"></i>Cerrar
+                                sesión</a></li>
+                        <li class="list-group-item text-center text-muted">Copyright © 2018 Manos.</li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="col-xl-9 col-lg-9 col-md-8 ml-sm-auto justify-content-center pt-2">
+                <!-- Second navbar -->
+                <div class="text-center container m-auto pt-3">
+                    <button class="btn btn-primary m-2 text-center" style="min-width:150px" type="button">
+                        Buscar<br />Servicios
+                    </button>
+                    <a href="services.html">
+                        <button class="btn btn-outline-primary m-2 text-center" style="min-width:150px" type="button">
+                            Estado de<br />servicios
+                        </button>
+                    </a>
+                </div>
+                <!-- Services -->
+                <div class="row px-3">
+                    <!-- Card 1-->
+                    <div class="col-lg-6 col-xl-4 mt-4">
+                        <div class="card w-100 mx-3 text-center border-dark">
+                            <!-- Card Text overlay -->
+                            <div class="card-header d-flex justify-content-center bg-gradient-dark text-white">
+                                <div class="align-self-start">
+                                    <i class="fas fa-home align-self-start fa-2x py-3"></i>
+                                </div>
+                                <div class="align-self-end px-2">
+                                    <h5>San Isidro</h5>
+                                    <h6>Av. Pezet 355</h6>
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="container">
+                                    <div class="row my-3">
+                                        <div class="col border-right m-auto">
+                                            <i class="fas fa-calendar"></i>
+                                            <p>Lunes 7 de enero,<br>2019</p>
+                                        </div>
+                                        <div class="col m-auto">
+                                            <i class="fas fa-clock"></i>
+                                            <p>De 1:00 pm.<br>a 6:00 pm.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body p-0 border-top">
+                                <div class="container m-0">
+                                    <div class="row my-3">
+                                        <div class="col m-auto">
+                                            <i class="fas fa-hand-holding-usd"></i>
+                                            <span>Pago: S/.45.00</span>
+                                        </div>
+                                        <div class="col">
+                                            <button class="btn btn-secondary m-0 border">Ver más</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2-->
+                    <div class="col-lg-6 col-xl-4 mt-4">
+                        <div class="card w-100 mx-3 text-center border-dark">
+                            <!-- Card Text overlay -->
+                            <div class="card-header d-flex justify-content-center bg-gradient-dark text-white">
+                                <div class="align-self-start">
+                                    <i class="fas fa-building align-self-start fa-2x py-3"></i>
+                                </div>
+                                <div class="align-self-end px-2">
+                                    <h5>San Isidro</h5>
+                                    <h6>Av. Juan de Arona 750</h6>
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="container">
+                                    <div class="row my-3">
+                                        <div class="col border-right m-auto">
+                                            <i class="fas fa-calendar"></i>
+                                            <p>Sábado 11 de noviembre,<br>2018</p>
+                                        </div>
+                                        <div class="col m-auto">
+                                            <i class="fas fa-clock"></i>
+                                            <p>De 1:00 pm.<br>a 6:00 pm.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body p-0 border-top">
+                                <div class="container m-0">
+                                    <div class="row my-3">
+                                        <div class="col m-auto">
+                                            <i class="fas fa-hand-holding-usd"></i>
+                                            <span>Pago: S/.45.00</span>
+                                        </div>
+                                        <div class="col">
+                                            <button class="btn btn-secondary m-0 border">Ver más</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-lg-6 col-xl-4 mt-4">
+                        <div class="card w-100 mx-3 text-center border-dark">
+                            <!-- Card Text overlay -->
+                            <div class="card-header d-flex justify-content-center bg-gradient-dark text-white">
+                                <div class="align-self-start">
+                                    <i class="fas fa-home align-self-start fa-2x py-3"></i>
+                                </div>
+                                <div class="align-self-end px-2">
+                                    <h5>Jesus María</h5>
+                                    <h6>Av. San Felipe 1205</h6>
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="container">
+                                    <div class="row my-3">
+                                        <div class="col border-right m-auto">
+                                            <i class="fas fa-calendar"></i>
+                                            <p>Sábado 11 de noviembre,<br>2018</p>
+                                        </div>
+                                        <div class="col m-auto">
+                                            <i class="fas fa-clock"></i>
+                                            <p>De 1:00 pm.<br>a 6:00 pm.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body p-0 border-top">
+                                <div class="container m-0">
+                                    <div class="row my-3">
+                                        <div class="col m-auto">
+                                            <i class="fas fa-hand-holding-usd"></i>
+                                            <span>Pago: S/.45.00</span>
+                                        </div>
+                                        <div class="col">
+                                            <button class="btn btn-secondary m-0 border">Ver más</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bootstrap script -->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                    crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+                    crossorigin="anonymous"></script>
+</body>
+
+</html>
