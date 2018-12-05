@@ -61,16 +61,63 @@
         </div>
     </nav>-->
 
-    <nav class="d-md-none shadow mb-2 fixed-top bg-white navbar navbar-expand-xl navbar-light bg-light mb-3">
-        <div class="m-auto container">
-            <a href="#" class="bg-gradient-primary rounded-circle p-1" style="position:absolute">
-                <i class="fas fa-bars text-white fa-2x p-2"></i>
+    <nav class="d-md-none shadow mb-2 fixed-top bg-white navbar navbar-expand-xl navbar-light bg-light mb-3" style="min-height:50px;">
+        <div class="m-auto container py-1 px-1">
+            <a href="#" class="rounded-circle p-1" style="position:absolute;" data-toggle="modal" data-target="#exampleModal">
+                <img src="../images/menu.png" style="width:45px;">
             </a>
             <a class="m-auto navbar-dark" href="#">
-                <img class="py-3" style="width:150px" src="../images/manos.png" />
+                <img class="py-3" style="width:140px" src="../images/manos.png" />
             </a>
         </div>
     </nav>
+
+    <div class="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document" style="height:100%; margin:0; padding: 0;">
+            <div class="modal-content w-75 ml-0" style="height:100%; margin:0; padding: 0;">
+                <div class="">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="text-center bg-gradient-primary text-white">
+                        <div class="container m-auto pt-3 pb-2 px-2">
+                            <a href="settings-edit-profile.html" class="text-white">
+                                <i class="fas fa-user-circle fa-4x m-1"></i>
+                            </a>
+                            <a class="text-white" href="settings.html">
+                                <h5>Paolo Bejarano</h5>
+                            </a>
+                            <a class="text-white" href="wallet.html">
+                                <h6>Crédito: S/100.00</h6>
+                            </a>
+                            <a href="bookings.html" class="text-white">
+                                <h6>1 solicitud</h6>
+                            </a>
+                            <a href="history.html" class="text-white">
+                                <h6>10 servicios pasados</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-flush flex-column">
+                        <li class="list-group-item list-group-item-action"><a href="settings.html"><i class="fas fa-cog px-2"></i>Ajustes
+                                de cuenta</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="addresses.html"><i class="fas fa-home px-2"></i>Mis
+                                direcciones</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="history.html"><i class="fas fa-history px-2"></i>Historial
+                                de servicios</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="wallet.html"><i class="fas fa-dollar-sign px-2"></i>Crédito</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="promo.html"><i class="fas fa-percent px-2"></i>Promociones</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="faqs.html"><i class="fas fa-question px-2"></i>Preguntas
+                                frecuentes</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="help.html"><i class="fas fa-headset px-2"></i>Ayuda</a></li>
+                        <li class="list-group-item list-group-item-action"><a class="text-danger" href="#"><i class="fas fa-sign-out-alt px-2"></i>Cerrar
+                                sesión</a></li>
+                        <li class="list-group-item text-center text-muted">Copyright © 2018 Manos.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section id="Main_section" class="pt-5">
         <div class="row pt-4">
@@ -116,10 +163,12 @@
             <div class="col-xl-9 col-lg-9 col-md-8 ml-sm-auto justify-content-center pt-2">
                 <!-- Second navbar -->
                 <div class="text-center container m-auto pt-3">
-                    <button class="btn btn-primary bg-gradient-primary m-2 text-center w-25" type="button">
+                    <button class="btn btn-primary bg-gradient-primary m-2 text-center w-25" style="min-width: 125px;"
+                        type="button">
                         Nuevo<br />Servicio
                     </button>
-                    <a href="bookings.html"><button class="btn btn-outline-primary m-2 text-center w-25" type="button">
+                    <a href="bookings.html"><button class="btn btn-outline-primary m-2 text-center w-25" style="min-width: 125px;"
+                            type="button">
                             Estado de<br />servicios
                         </button></a>
                 </div>
