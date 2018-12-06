@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<body>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Manos - Ajustes de cuenta</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" href="../css/bootstrap.css" />
+        <link rel="stylesheet" href="../css/custom.css" />
+        <link rel="shortcut icon" href="../images/manos.ico " />
+        <link rel="apple-touch-icon" sizes="128x128" href="../images/manos_logo.png" />
+        <link rel="icon" sizes="192x192" href="../images/manos_logo.png" />
+
+        <!-- Scripts for Date Picker GUI -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/js/gijgo.min.js" type="text/javascript"></script>
+        <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="d-none d-md-block shadow p-4 mb-2 fixed-top bg-white navbar navbar-light bg-light">
+            <div class="m-auto container">
+                <a class="m-auto navbar-dark" href="requests.html">
+                    <img style="width:150px" src="../images/manos.png" />
+                </a>
+            </div>
+        </nav>
+
+        <nav class="d-md-none shadow mb-2 fixed-top bg-white navbar navbar-expand-xl navbar-light bg-light mb-3" style="min-height:50px;">
+            <div class="m-auto container py-1 px-1">
+                <a href="#" class="rounded-circle p-1" style="position:absolute;" data-toggle="modal" data-target="#exampleModal">
+                    <img src="../images/menu.png" style="width:45px;">
+                </a>
+                <a class="m-auto navbar-dark" href="requests.html">
+                    <img class="py-3" style="width:140px" src="../images/manos.png" />
+                </a>
+            </div>
+        </nav>
+
+        <div class="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document" style="height:100%; margin:0; padding: 0;">
+                <div class="modal-content w-75 ml-0" style="height:100%; margin:0; padding: 0;">
+                    <div class="">
+                        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>-->
+                        <div class="text-center bg-gradient-primary text-white">
+                            <div class="container m-auto pt-4 pb-3 px-2">
+                                <a href="settings.html" class="text-white">
+                                    <i class="fas fa-user-circle fa-4x m-1"></i>
+                                </a>
+                                <a class="text-white" href="settings.html">
+                                    <h5>Paolo Bejarano</h5>
+                                </a>
+                                <a href="services.html" class="text-white">
+                                    <h6>2 servicios en espera</h6>
+                                </a>
+                                <a href="services.html" class="text-white">
+                                    <h6>1 servicio confirmado</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush flex-column">
+                            <li class="list-group-item list-group-item-action">
+                                <a href="requests.html"><i class="fas fa-plus-circle px-2"></i>Buscar servicios</a>
+                            </li>
+                            <li class="list-group-item list-group-item-action"><a href="settings.html"><i class="fas fa-cog px-2"></i>Ajustes
+                                    de cuenta</a></li>
+                            <li class="list-group-item list-group-item-action"><a href="history.html"><i class="fas fa-history px-2"></i>Historial
+                                    de servicios</a></li>
+                            <li class="list-group-item list-group-item-action"><a href="payments.html"><i class="fas fa-dollar-sign px-2"></i>Pagos</a></li>
+                            <li class="list-group-item list-group-item-action"><a href="faqs.html"><i class="fas fa-question px-2"></i>Preguntas
+                                    frecuentes</a></li>
+                            <li class="list-group-item list-group-item-action"><a href="help.html"><i class="fas fa-headset px-2"></i>Ayuda</a></li>
+                            <li class="list-group-item list-group-item-action"><a class="text-danger" href="#"><i class="fas fa-sign-out-alt px-2"></i>Cerrar
+                                    sesión</a></li>
+                            <li class="list-group-item text-center text-muted">Copyright © 2019 Manos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="Main_section" class="pt-5">
+            <div class="row pt-4">
+                <nav class="col-xl-3 col-lg-3 col-md-4 d-none d-md-block sidebar border-right">
+                    <div class="sidebar-sticky">
+                        <div class="text-center bg-gradient-primary text-white">
+                            <div class="container m-auto pt-5 pb-4 px-2">
+                                <a href="settings.html" class="text-white">
+                                    <i class="fas fa-user-circle fa-4x m-1"></i>
+                                </a>
+                                <a class="text-white" href="settings.html">
+                                    <h4>Paolo Bejarano</h4>
+                                </a>
+                                <a href="services.html" class="text-white">
+                                    <h6>2 servicios en espera</h6>
+                                </a>
+                                <a href="services.html" class="text-white">
+                                    <h6>1 servicio confirmado</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush flex-column">
+                            <li class="list-group-item list-group-item-action">
+                                <a href="requests.html"><i class="fas fa-plus-circle px-2"></i>Buscar servicios</a>
+                            </li>
+                            <li class="list-group-item list-group-item-action"><a href="settings.html"><i class="fas fa-cog px-2"></i>Ajustes
+                                    de cuenta</a></li>
+                            <li class="list-group-item list-group-item-action"><a href="history.html"><i class="fas fa-history px-2"></i>Historial
+                                    de servicios</a></li>
+                            <li class="list-group-item list-group-item-action"><a href="payments.html"><i class="fas fa-dollar-sign px-2"></i>Pagos</a></li>
+                            <li class="list-group-item list-group-item-action"><a href="faqs.html"><i class="fas fa-question px-2"></i>Preguntas
+                                    frecuentes</a></li>
+                            <li class="list-group-item list-group-item-action"><a href="help.html"><i class="fas fa-headset px-2"></i>Ayuda</a></li>
+                            <li class="list-group-item list-group-item-action"><a class="text-danger" href="#"><i class="fas fa-sign-out-alt px-2"></i>Cerrar
+                                    sesión</a></li>
+                            <li class="list-group-item text-center text-muted">Copyright © 2019 Manos</li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="col-xl-9 col-lg-9 col-md-8 ml-md-auto pt-2">
+                    <!-- Content -->
+                    <div class="content pt-4 pb-2 text-dark">
+                        <h3 class="text-center">Ajustes de cuenta</h3>
+                        <div class="progress w-75 m-auto mt-2" style="height:2px;">
+                            <div class="progress-bar bg-dark" style="width:100%"></div>
+                        </div>
+                        <div class="row pt-3 px-4">
+                            <div class="col-3 text-center">
+                                <i class="fas fa-user fa-6x text-secondary"></i><br>
+                            </div>
+                            <div class="col-5">
+                                <h5>Número celular</h5>
+                                <p class="mb-3">+51 983 776 433</p>
+                                <h5>Email</h5>
+                                <p class="mb-3">paolobejarano@hotmail.com</p>
+                                <h5>Nombre completo</h5>
+                                <p class="mb-3">Paolo Bejarano</p>
+                                <a href="settings-edit-profile.html" class="text-secondary">Cambiar mail</a><br>
+                                <a href="settings-change-email-notifications.html" class="text-secondary">Preferencias
+                                    de notificaciones</a>
+                            </div>
+                            <div class="col-4">
+                                <h5>Contraseña</h5>
+                                <p>**********</p>
+                                <a class="text-secondary" href="settings-change-password.html">Cambiar contraseña</a>
+                            </div>
+                        </div>
+                        <h3 class="text-center mt-3">Preferencias</h3>
+                        <div class="progress w-75 m-auto mt-2" style="height:2px;">
+                            <div class="progress-bar bg-dark" style="width:100%"></div>
+                        </div>
+                        <div class="row pt-3 px-4">
+                            <div class="col-6">
+                                <h5 class="">Distritos preferidos</h5>
+                                <ul>
+                                    <li>Lince</li>
+                                    <li>Miraflores</li>
+                                    <li>San Isidro</li>
+                                    <li>Santiago de Surco</li>
+                                </ul>
+                                <a href="settings-edit-districts.html" class="text-secondary">Cambiar preferencia de
+                                    distritos</a><br>
+                            </div>
+                            <div class="col-6">
+                                <h5>Días preferidos</h5>
+                                <p class="mb-3">+51 983 776 433</p>
+                                <h5>Email</h5>
+                                <p class="mb-3">paolobejarano@hotmail.com</p>
+                                <h5>Nombre completo</h5>
+                                <p class="mb-3">Paolo Bejarano</p>
+                                <a href="settings-edit-profile.html" class="text-secondary">Cambiar mail</a><br>
+                                <a href="settings-change-email-notifications.html" class="text-secondary">Preferencias
+                                    de notificaciones</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- Bootstrap script -->
+
+        <script type="text/javascript" src="../bower_components/wickedpicker/src/wickedpicker.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>

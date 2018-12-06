@@ -26,102 +26,115 @@
     <body>
         <!-- Navbar -->
         <nav class="d-none d-md-block shadow p-4 mb-2 fixed-top bg-white navbar navbar-light bg-light">
-            <div class="m-auto container p-1">
-                <a class="m-auto navbar-dark" href="#">
+            <div class="m-auto container">
+                <a class="m-auto navbar-dark" href="book.html">
                     <img style="width:150px" src="../images/manos.png" />
                 </a>
             </div>
         </nav>
-        <nav class="d-md-none shadow py-3 mb-2 fixed-top bg-white navbar navbar-expand-xl navbar-light bg-light mb-3">
-            <div class="m-auto container">
-                <button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#clientNavBar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="m-auto navbar-dark" href="#">
-                    <img style="width:150px" src="../images/manos.png" />
+
+        <nav class="d-md-none shadow mb-2 fixed-top bg-white navbar navbar-expand-xl navbar-light bg-light mb-3" style="min-height:50px;">
+            <div class="m-auto container py-1 px-1">
+                <a href="#" class="rounded-circle p-1" style="position:absolute;" data-toggle="modal" data-target="#exampleModal">
+                    <img src="../images/menu.png" style="width:45px;">
                 </a>
-                <div class="collapse navbar-collapse d-lg-none" id="clientNavBar">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <div class="progress w-50 m-2" style="height:1px;">
-                                <div class="progress-bar bg-dark" style="width:100%"></div>
+                <a class="m-auto navbar-dark" href="book.html">
+                    <img class="py-3" style="width:140px" src="../images/manos.png" />
+                </a>
+            </div>
+        </nav>
+
+        <div class="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document" style="height:100%; margin:0; padding: 0;">
+                <div class="modal-content w-75 ml-0" style="height:100%; margin:0; padding: 0;">
+                    <div class="">
+                        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                  </button>-->
+                        <div class="text-center bg-gradient-primary text-white">
+                            <div class="container m-auto pt-3 pb-2 px-2">
+                                <a href="settings-edit-profile.html" class="text-white">
+                                    <i class="fas fa-user-circle fa-4x m-1"></i>
+                                </a>
+                                <a class="text-white" href="settings.html">
+                                    <h5>Paolo Bejarano</h5>
+                                </a>
+                                <a class="text-white" href="wallet.html">
+                                    <h6>Crédito: S/100.00</h6>
+                                </a>
+                                <a href="bookings.html" class="text-white">
+                                    <h6>1 solicitud</h6>
+                                </a>
+                                <a href="history.html" class="text-white">
+                                    <h6>10 servicios pasados</h6>
+                                </a>
                             </div>
-                        </li>
-                        <li><a class="m-3" href="settings.html"><i class="fas fa-cog mr-2"></i>Ajuste de cuenta</a></li>
-                        <li>
-                            <div class="progress w-50 m-2" style="height:1px;">
-                                <div class="progress-bar bg-dark" style="width:100%"></div>
-                            </div>
-                        </li>
-                        <li><a class="m-3" href="addresses.html"><i class="fas fa-home mr-2"></i>Mis direcciones</a></li>
-                        <li>
-                            <div class="progress w-50 m-2" style="height:1px;">
-                                <div class="progress-bar bg-dark" style="width:100%"></div>
-                            </div>
-                        </li>
-                        <li><a class="m-3" href="history.html"><i class="fas fa-history mr-2"></i>Historial de
-                                servicios</a></li>
-                        <li>
-                            <div class="progress w-50 m-2" style="height:1px;">
-                                <div class="progress-bar bg-dark" style="width:100%"></div>
-                            </div>
-                        </li>
-                        <li><a class="m-3" href="wallet.html"><i class="fas fa-dollar-sign mr-2"></i>Crédito</a></li>
-                        <li>
-                            <div class="progress w-50 m-2" style="height:1px;">
-                                <div class="progress-bar bg-dark" style="width:100%"></div>
-                            </div>
-                        </li>
-                        <li><a class="m-3" href="promo.html"><i class="fas fa-percent mr-2"></i>Promociones</a></li>
-                        <li>
-                            <div class="progress w-50 m-2" style="height:1px;">
-                                <div class="progress-bar bg-dark" style="width:100%"></div>
-                            </div>
-                        </li>
-                        <li><a class="m-3" href="faqs.html"><i class="fas fa-question mr-2"></i>Preguntas frecuentes</a></li>
-                        <li>
-                            <div class="progress w-50 m-2" style="height:1px;">
-                                <div class="progress-bar bg-dark" style="width:100%"></div>
-                            </div>
-                        </li>
-                        <li><a class="m-3" href="help.html"><i class="fas fa-headset mr-2"></i>Ayuda</a></li>
-                        <li>
-                            <div class="progress w-50 m-2" style="height:1px;">
-                                <div class="progress-bar bg-dark" style="width:100%"></div>
-                            </div>
-                        </li>
-                        <li><a class="m-3 text-danger" href="https://manos-pe.github.io/prototipo1"><i class="fas fa-sign-out-alt mr-2"></i>Cerrar
-                                sesión</a></li>
-                    </ul>
+                        </div>
+                        <ul class="list-group list-group-flush flex-column">
+                            <li class="list-group-item list-group-item-action">
+                                <a href="book.html"><i class="fas fa-plus-circle px-2"></i>Pedir nuevo servicio</a>
+                            </li>
+                            <li class="list-group-item list-group-item-action"><a href="settings.html"><i class="fas fa-cog px-2"></i>Ajustes
+                                    de cuenta</a></li>
+                            <li class="list-group-item list-group-item-action"><a href="addresses.html"><i class="fas fa-home px-2"></i>Mis
+                                    direcciones</a></li>
+                            <li class="list-group-item list-group-item-action"><a href="history.html"><i class="fas fa-history px-2"></i>Historial
+                                    de servicios</a></li>
+                            <li class="list-group-item list-group-item-action"><a href="wallet.html"><i class="fas fa-dollar-sign px-2"></i>Crédito</a></li>
+                            <li class="list-group-item list-group-item-action"><a href="promo.html"><i class="fas fa-percent px-2"></i>Promociones</a></li>
+                            <li class="list-group-item list-group-item-action"><a href="faqs.html"><i class="fas fa-question px-2"></i>Preguntas
+                                    frecuentes</a></li>
+                            <li class="list-group-item list-group-item-action"><a href="help.html"><i class="fas fa-headset px-2"></i>Ayuda</a></li>
+                            <li class="list-group-item list-group-item-action"><a class="text-danger" href="#"><i class="fas fa-sign-out-alt px-2"></i>Cerrar
+                                    sesión</a></li>
+                            <li class="list-group-item text-center text-muted">Copyright © 2019 Manos</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
 
         <section id="Main_section" class="pt-5">
             <div class="row pt-4">
                 <nav class="col-xl-3 col-lg-3 col-md-4 d-none d-md-block sidebar border-right">
                     <div class="sidebar-sticky">
-                        <div class="jumbotron text-center bg-gradient-primary text-white">
-                            <i class="fas fa-user-circle fa-4x"></i>
-                            <h4>Paolo Bejarano</h4>
-                            <h6>Crédito: S/100.00</h6>
-                            <h6>1 solicitud - 10 servicios</h6>
+                        <div class="text-center bg-gradient-primary text-white">
+                            <div class="container m-auto pt-4 pb-3 px-2">
+                                <a href="settings-edit-profile.html" class="text-white">
+                                    <i class="fas fa-user-circle fa-4x m-1"></i>
+                                </a>
+                                <a class="text-white" href="settings.html">
+                                    <h4>Paolo Bejarano</h4>
+                                </a>
+                                <a class="text-white" href="wallet.html">
+                                    <h6>Crédito: S/100.00</h6>
+                                </a>
+                                <a href="bookings.html" class="text-white">
+                                    <h6>1 solicitud</h6>
+                                </a>
+                                <a href="history.html" class="text-white">
+                                    <h6>10 servicios pasados</h6>
+                                </a>
+                            </div>
                         </div>
-                        <ul class="nav nav-pills flex-column">
-                            <li class="nav-item border-bottom bg-light"><a class="nav-link" href="settings.html"><i
-                                        class="fas fa-cog px-2"></i>Ajustes
+                        <ul class="list-group list-group-flush flex-column">
+                            <li class="list-group-item list-group-item-action">
+                                <a href="book.html"><i class="fas fa-plus-circle px-2"></i>Pedir nuevo servicio</a>
+                            </li>
+                            <li class="list-group-item list-group-item-action"><a href="settings.html"><i class="fas fa-cog px-2"></i>Ajustes
                                     de cuenta</a></li>
-                            <li class="nav-item border-bottom"><a class="nav-link" href="addresses.html"><i class="fas fa-home px-2"></i>Mis
+                            <li class="list-group-item list-group-item-action"><a href="addresses.html"><i class="fas fa-home px-2"></i>Mis
                                     direcciones</a></li>
-                            <li class="nav-item border-bottom"><a class="nav-link" href="client/history.html"><i class="fas fa-history px-2"></i>Historial
+                            <li class="list-group-item list-group-item-action"><a href="history.html"><i class="fas fa-history px-2"></i>Historial
                                     de servicios</a></li>
-                            <li class="nav-item border-bottom"><a class="nav-link" href="client/wallet.html"><i class="fas fa-dollar-sign px-2"></i>Crédito</a></li>
-                            <li class="nav-item border-bottom"><a class="nav-link" href="client/promo.html"><i class="fas fa-percent px-2"></i>Promociones</a></li>
-                            <li class="nav-item border-bottom"><a class="nav-link" href="faqs.html"><i class="fas fa-question px-2"></i>Preguntas
+                            <li class="list-group-item list-group-item-action bg-light"><a href="wallet.html"><i class="fas fa-dollar-sign px-2"></i>Crédito</a></li>
+                            <li class="list-group-item list-group-item-action"><a href="promo.html"><i class="fas fa-percent px-2"></i>Promociones</a></li>
+                            <li class="list-group-item list-group-item-action"><a href="faqs.html"><i class="fas fa-question px-2"></i>Preguntas
                                     frecuentes</a></li>
-                            <li class="nav-item border-bottom"><a class="nav-link" href="client/help.html"><i class="fas fa-headset px-2"></i>Ayuda</a></li>
-                            <li class="nav-item"><a class="nav-link text-danger" href="#"><i class="fas fa-sign-out-alt px-2"></i>Cerrar
+                            <li class="list-group-item list-group-item-action"><a href="help.html"><i class="fas fa-headset px-2"></i>Ayuda</a></li>
+                            <li class="list-group-item list-group-item-action"><a class="text-danger" href="#"><i class="fas fa-sign-out-alt px-2"></i>Cerrar
                                     sesión</a></li>
+                            <li class="list-group-item text-center text-muted">Copyright © 2019 Manos</li>
                         </ul>
                     </div>
                 </nav>

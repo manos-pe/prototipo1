@@ -26,37 +26,66 @@
     <!-- Navbar -->
     <nav class="d-none d-md-block shadow p-4 mb-2 fixed-top bg-white navbar navbar-light bg-light">
         <div class="m-auto container">
-            <a class="m-auto navbar-dark" href="#">
+            <a class="m-auto navbar-dark" href="book.html">
                 <img style="width:150px" src="../images/manos.png" />
             </a>
         </div>
     </nav>
-    <nav class="d-md-none shadow py-3 mb-2 fixed-top bg-white navbar navbar-expand-xl navbar-light bg-light mb-3">
-        <div class="m-auto container">
-            <button class="custom-toggler navbar-toggler bg-gradient-primary p-2 rounded-circle" data-toggle="collapse"
-                data-target="#clientNavBar">
-                <span class="custom-toggler navbar-toggler-icon"></span>
-            </button>
-            <a class="m-auto navbar-dark" href="#">
-                <img style="width:150px" src="../images/manos.png" />
+
+    <nav class="d-md-none shadow mb-2 fixed-top bg-white navbar navbar-expand-xl navbar-light bg-light mb-3" style="min-height:50px;">
+        <div class="m-auto container py-1 px-1">
+            <a href="#" class="rounded-circle p-1" style="position:absolute;" data-toggle="modal" data-target="#exampleModal">
+                <img src="../images/menu.png" style="width:45px;">
             </a>
-            <div class="collapse navbar-collapse d-lg-none" id="clientNavBar">
-                <ul class="nav navbar-nav list-group list-group-flush">
-                    <li class="list-group-item border-dark"><a class="" href="settings.html"><i class="fas fa-cog mr-2"></i>Ajuste
-                            de cuenta</a></li>
-                    <li class="list-group-item border-dark"><a class="" href="history.html"><i class="fas fa-history mr-2"></i>Historial
-                            de
-                            servicios</a></li>
-                    <li class="list-group-item border-dark"><a class="" href="payments.html"><i class="fas fa-dollar-sign mr-2"></i>Pagos</a></li>
-                    <li class="list-group-item border-dark"><a class="" href="faqs.html"><i class="fas fa-question mr-2"></i>Preguntas
-                            frecuentes</a></li>
-                    <li class="list-group-item border-dark"><a class="" href="help.html"><i class="fas fa-headset mr-2"></i>Ayuda</a></li>
-                    <li class="list-group-item border-dark"><a class="text-danger" href="#testimonials"><i class="fas fa-sign-out-alt mr-2"></i>Cerrar
-                            sesión</a></li>
-                </ul>
+            <a class="m-auto navbar-dark" href="book.html">
+                <img class="py-3" style="width:140px" src="../images/manos.png" />
+            </a>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document" style="height:100%; margin:0; padding: 0;">
+            <div class="modal-content w-75 ml-0" style="height:100%; margin:0; padding: 0;">
+                <div class="">
+                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>-->
+                    <div class="text-center bg-gradient-primary text-white">
+                        <div class="container m-auto pt-4 pb-3 px-2">
+                            <a href="settings.html" class="text-white">
+                                <i class="fas fa-user-circle fa-4x m-1"></i>
+                            </a>
+                            <a class="text-white" href="settings.html">
+                                <h5>Paolo Bejarano</h5>
+                            </a>
+                            <a href="services.html" class="text-white">
+                                <h6>2 servicios en espera</h6>
+                            </a>
+                            <a href="services.html" class="text-white">
+                                <h6>1 servicio confirmado</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-flush flex-column">
+                        <!--<li class="list-group-item list-group-item-action">
+                            <a href="requests.html"><i class="fas fa-plus-circle px-2"></i>Buscar servicios</a>
+                        </li>-->
+                        <li class="list-group-item list-group-item-action"><a href="settings.html"><i class="fas fa-cog px-2"></i>Ajustes
+                                de cuenta</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="history.html"><i class="fas fa-history px-2"></i>Historial
+                                de servicios</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="payments.html"><i class="fas fa-dollar-sign px-2"></i>Pagos</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="faqs.html"><i class="fas fa-question px-2"></i>Preguntas
+                                frecuentes</a></li>
+                        <li class="list-group-item list-group-item-action"><a href="help.html"><i class="fas fa-headset px-2"></i>Ayuda</a></li>
+                        <li class="list-group-item list-group-item-action"><a class="text-danger" href="#"><i class="fas fa-sign-out-alt px-2"></i>Cerrar
+                                sesión</a></li>
+                        <li class="list-group-item text-center text-muted">Copyright © 2019 Manos</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
 
     <section id="Main_section" class="pt-5">
         <div class="row pt-4">
@@ -79,6 +108,9 @@
                         </div>
                     </div>
                     <ul class="list-group list-group-flush flex-column">
+                        <!--<li class="list-group-item list-group-item-action">
+                            <a href="requests.html"><i class="fas fa-plus-circle px-2"></i>Buscar servicios</a>
+                        </li>-->
                         <li class="list-group-item list-group-item-action"><a href="settings.html"><i class="fas fa-cog px-2"></i>Ajustes
                                 de cuenta</a></li>
                         <li class="list-group-item list-group-item-action"><a href="history.html"><i class="fas fa-history px-2"></i>Historial
@@ -89,7 +121,7 @@
                         <li class="list-group-item list-group-item-action"><a href="help.html"><i class="fas fa-headset px-2"></i>Ayuda</a></li>
                         <li class="list-group-item list-group-item-action"><a class="text-danger" href="#"><i class="fas fa-sign-out-alt px-2"></i>Cerrar
                                 sesión</a></li>
-                        <li class="list-group-item text-center text-muted">Copyright © 2018 Manos.</li>
+                        <li class="list-group-item text-center text-muted">Copyright © 2019 Manos</li>
                     </ul>
                 </div>
             </nav>
