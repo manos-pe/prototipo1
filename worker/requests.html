@@ -128,17 +128,17 @@
             <div class="col-xl-9 col-lg-9 col-md-8 ml-sm-auto justify-content-center pt-2">
                 <!-- Second navbar -->
                 <div class="text-center container m-auto pt-3">
-                    <button class="btn btn-primary m-2 text-center" style="min-width:175px" type="button">
+                    <button class="btn btn-primary m-2 text-center w-25" style="min-width:150px;" type="button">
                         Buscar<br />Servicios
                     </button>
                     <a href="services.html">
-                        <button class="btn btn-outline-primary m-2 text-center" style="min-width:175px" type="button">
+                        <button class="btn btn-outline-primary m-2 text-center w-25" style="min-width:150px;" type="button">
                             Estado de<br />servicios
                         </button>
                     </a>
                 </div>
                 <!-- Services -->
-                <div class="row px-3">
+                <div class="row px-4 m-auto">
                     <!-- Card 1-->
                     <div class="col-lg-6 col-xl-4 mt-4">
                         <div class="card w-100 mx-3 text-center border-dark">
@@ -258,7 +258,35 @@
                                             <span>Pago: S/.45.00</span>
                                         </div>
                                         <div class="col">
-                                            <button class="btn btn-secondary m-0 border">Ver más</button>
+                                            <button class="btn btn-secondary m-0 border" data-toggle="collapse"
+                                                data-target="#request1">Ver más</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="request1">
+                                <div class="card-body border-top p-0">
+                                    <p class="mt-2">Necesidades: Limpiar, lavar y cocinar</p>
+                                </div>
+                                <div class="card-body border-top p-0">
+                                    <p class="mt-2">Comentarios adicionales: No hay</p>
+                                </div>
+                                <div class="card-body border-top p-0">
+                                    <i class="fas fa-hand-holding-usd my-3"></i>
+                                    <span class="my-3">Pago: S/.45.00</span>
+                                </div>
+                                <div class="card-body p-0 border-top">
+                                    <div class="container m-0">
+                                        <div class="row my-3">
+                                            <div class="col m-auto">
+                                                <button class="btn btn-outline-primary" style="min-width: 110px;"
+                                                    data-toggle="collapse" data-target="#request3">Ver
+                                                    Menos</button>
+                                            </div>
+                                            <div class="col">
+                                                <button class="btn btn-secondary m-0 border" data-toggle="modal"
+                                                    data-target="#ModalRequest3" style="min-width: 110px;">Postular</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -266,6 +294,24 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="modal fade" id="ModalRequest3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <h5 class="text-center p-3">¿Seguro que desea postular<br>a este servicio?</h5>
+                                <div class="content m-auto text-center">
+                                    <button type="button" class="btn btn-outline-primary border mx-2" data-dismiss="modal"
+                                        style="min-width:110px;">Cancelar</button>
+                                    <button type="button" class="btn btn-secondary border mx-2" style="min-width:110px;">Postular</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <!-- Bootstrap script -->
                 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
                     crossorigin="anonymous"></script>
