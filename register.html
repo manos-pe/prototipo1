@@ -1,145 +1,169 @@
 <!DOCTYPE html>
-<html class="no-js" lang="ES">
-  <!-- <![endif] -->
+<html class="no-js" lang="">
+<!-- <![endif] -->
 
-  <head>
-    <meta charset="utf-8" />
-    <title>Manos - Menos problemas, Más Vida</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="images/manos.ico " />
-    <link rel="apple-touch-icon" sizes="128x128" href="images/manos_logo.png" />
-    <link rel="icon" sizes="192x192" href="images/manos_logo.png" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <title>Manos - Menos problemas, Más Vida</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="shortcut icon" href="images/manos.ico " />
+  <link rel="apple-touch-icon" sizes="128x128" href="images/manos_logo.png" />
+  <link rel="icon" sizes="192x192" href="images/manos_logo.png" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+</head>
 
-  <body>
-    <!-- Navbar -->
-    <nav
-      class="fixed-top shadow p-3 mb-3 bg-white rounded navbar navbar-expand-md navbar-light bg-light mb-3"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img style="width:150px" src="images/manos.png"
-        /></a>
-        <button
-          class="navbar-toggler navbar-toggle-right"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="primary-nav">
-            <li><a href="#intro">INICIO</a></li>
-            <li><a href="#howToWork">CÓMO FUNCIONA</a></li>
-            <li><a href="#packages">PAQUETES</a></li>
-            <li><a href="#services">COMPROMISO</a></li>
-            <li><a href="#testimonials">CLIENTES</a></li>
-          </ul>
+<body>
+  <!-- Navbar -->
+  <nav class="fixed-top shadow p-3 mb-3 bg-white rounded navbar navbar-expand-md navbar-light bg-light mb-3">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img style="width:150px" src="images/manos.png" /></a>
+      <button class="navbar-toggler navbar-toggle-right" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="index.html">CÓMO FUNCIONA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="index.html">PAQUETES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="index.html">COMPROMISO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="index.html">CLIENTES</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br /><br /><br />
+
+  <!-- Login Form for users-->
+  <div class="card card-outline-secondary float-center mr-auto ml-auto mt-4 w-75" style="max-width: 500px;">
+    <div class="card-header">
+      <h4 class="mb-0 text-primary">Registro</h4>
+    </div>
+    <div class="card-body">
+      <form class="form" role="form" autocomplete="off" id="registerForm" novalidate="" method="POST">
+        <div class="form-group">
+          <label for="Full name">
+            <h6 class="text-dark">Nombre completo:</h6>
+          </label>
+          <input type="text" class="form-control" name="FullName" id="FullName" required="" />
+        </div>
+        <div class="form-group">
+          <label for="uname1">
+            <h6 class="text-dark">Correo electrónico</h6>
+          </label>
+          <input type="text" class="form-control" name="uname1" id="uname1" required="" />
+        </div>
+        <div class="form-group">
+          <label>
+            <h6 class="text-dark">Contraseña</h6>
+          </label>
+          <input type="password" class="form-control" id="pwd1" required="" autocomplete="new-password" />
+        </div>
+        <div class="form-group">
+          <label>
+            <h6 class="text-dark">Confirma tu contraseña</h6>
+          </label>
+          <input type="password" class="form-control" id="pwd1" required="" autocomplete="new-password" />
+        </div>
+        <a class="btn btn-primary btn-block mt-4" href="register.html">
+          Registrarse
+        </a>
+        <p class="text-dark mt-2" style="font-size:14px;">Al registrarte en Manos, aceptas nuestros <a href="terms.html"
+            target="_blank">Términos y
+            Condiciones</a>
+          y nuestra <a href="privacy.html">Política de Privacidad</a></p>
+      </form>
+    </div>
+    <div class="card-footer text-center text-dark">
+      ¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a>
+    </div>
+  </div>
+
+  <!-- Collapsable Login Form for workers -->
+  <div class="card float-center mr-auto ml-auto mt-4 w-75" style="max-width: 500px;">
+    <a href="#loginform" data-toggle="collapse">
+      <div class="card-header bg-gradient-secondary pb-1 pt-2">
+        <h4 class="text-white">¿Deseas trabajar en Manos?</h4>
+      </div>
+    </a>
+    <div id="loginform" class="collapse">
+      <div class="card-body">
+        <form class="form" role="form" autocomplete="off" id="loginForm" novalidate="" method="POST">
+          <div class="form-group">
+            <label for="uname1">
+              <h6 class="text-dark">Correo electrónico</h6>
+            </label>
+            <input type="text" class="form-control" name="uname1" id="uname1" required="" />
+          </div>
+          <div class="form-group">
+            <label>
+              <h6 class="text-dark">Contraseña</h6>
+            </label>
+            <input type="password" class="form-control" id="pwd1" required="" autocomplete="new-password" />
+          </div>
+          <p></p>
+          <a class="btn btn-primary btn-block mt-3" href="worker/requests.html">
+            Iniciar sesión </a>
+          <a class="btn btn-outline-primary btn-block mt-3" href="register.html">
+            Registrarse
+          </a>
+          <p>Al registrarte en Manos, aceptas nuestros <a href="terms.html" target="_blank">Términos y Condiciones</a>
+            y nuestra <a href="privacy.html">Política de Privacidad</a></p>
+          <a class="btn btn-link btn-block mt-3" href="client/book.html">
+            Recuperar contraseña
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer section -->
+  <footer class="footer text-white mt-4" style="background-color:#181818;">
+    <div class="container">
+      <div class="row px-2 py-5">
+        <div class="col-md-6 p-3">
+          <h5>Sobre Manos</h5>
+          <p style="color: #8b8b8b;" class="">Lima, Perú<br>
+            +51 954 186 451<br>
+            contacto@manos.pe</p>
+          <p>Copyright © 2018 Manos. Todos los derechos reservados. </p>
+        </div>
+        <div class="col-md-3 p-3">
+          <h5>Secciones </h5>
+          <a style="color: #8b8b8b;" href="#">Lo que hacemos</a><br>
+          <a style="color: #8b8b8b;" href="faqs.html">Preguntas Frecuentes</a><br>
+          <a style="color: #8b8b8b;" href="privacy.html">Política de Privacidad</a><br>
+          <a style="color: #8b8b8b;" href="terms.html">Legal</a>
+        </div>
+        <div class="col-md-3 p-3">
+          <h5>Encuéntranos en:</h5>
+          <a style="color: #8b8b8b;" href="https://www.facebook.com/ManosApp/" target="_blank"><i class="fab fa-facebook-square fa-2x m-2"></i></a>
+          <a style="color: #8b8b8b;" href="https://www.instagram.com/manosapp/" target="_blank"><i class="fab fa-instagram fa-2x m-2"></i></a>
         </div>
       </div>
-    </nav><br><br><br>
-    <!-- Title -->
-    <div class="title m-3 text-center"><h3 class="text-center m-auto text-primary">Registro</h2></div>
-    <!-- breakline -->
-    <div class="progress w-75 m-auto" style="height:2px;">
-        <div class="progress-bar bg-secondary" style="width:100%"></div>
-      </div>
-    <!-- Login Form -->
-    <form class="pl-3 pr-3" action="">
-      
-      <!-- Name and Last name -->
-      <div class="form-group p-1">
-            <label for="Name">Nombres:</label>
-            <input
-              class="form-control"
-              type="text"
-              id="Name"
-              placeholder=""
-            />
-          </div>
-          <div class="form-group p-1">
-                <label for="text">Apellidos:</label>
-                <input
-                  class="form-control"
-                  type="text"
-                  id="Lastname"
-                  placeholder=""
-                />
-              </div>
+    </div>
+  </footer>
 
-      <!-- Cell phone -->
-      <div class="form-group p-1">
-            <label for="cellphone">Número celular</label>
-            <input
-              class="form-control"
-              type="number"
-              id="cellphone"
-              placeholder=""
-            />
-          </div>
+  <!-- Bootstrap script -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+</body>
 
-      <!-- Mail -->
-      <div class="form-group p-1">
-            <label for="email">Correo electrónico:</label>
-            <input
-              class="form-control"
-              type="email"
-              id="email"
-              placeholder=""
-            />
-          </div>
-
-
-      <!-- Password -->
-      <div class="form-group p-1">
-        <label for="password">Contraseña:</label>
-        <input
-          class="form-control"
-          type="password"
-          id="password"
-          placeholder=""
-        />
-      </div>
-
-      <!-- Password confirm -->
-      <div class="form-group p-1">
-            <label for="password">Confirmar contraseña:</label>
-            <input
-              class="form-control"
-              type="password"
-              id="password"
-              placeholder=""
-            />
-          </div>
-
-      <div class="text-center m-auto">
-        <button class="p-2 m-2 btn btn-primary w-15" type="button">
-          Registrarme
-        </button></a>
-      </div>
-    </form>
-    <!-- Bootstrap script -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
