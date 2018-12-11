@@ -144,27 +144,35 @@
                     <!-- Content -->
                     <div class="content pt-4 pb-2 px-5 text-dark">
                         <h5><a href="settings.html"><i class="fas fa-angle-left m-2"></i>Ajustes de cuenta</a></h5>
-                        <h3 class="text-center text-primary">Cambiar contraseña</h3>
+                        <h3 class="text-center text-primary">Editar preferencias de notificaciones por Mail</h3>
                         <div class="progress w-75 m-auto mt-2" style="height:2px;">
                             <div class="progress-bar bg-dark" style="width:100%"></div>
                         </div>
                         <div class="container px-4 pt-4">
                             <form>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Contraseña actual</label>
-                                    <input type="password" class="form-control w-100" id="NombreCompleto" placeholder="">
+                                <div class="form-check">
+                                    <input class="form-check-input checked" type="checkbox" value="" id="Mail1">
+                                    <label class="form-check-label" for="Mail1">
+                                        <h5>Promociones</h5>
+                                        <p>Entérate de las últimas promociones de Manos</p>
+                                    </label>
                                 </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Nueva contraseña</label>
-                                    <input type="password" class="form-control w-100" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp" placeholder="">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Mail2">
+                                    <label class="form-check-label" for="Mail2">
+                                        <h5>Noticias y anuncios</h5>
+                                        <p>Recibe las últimas noticias y anuncios de Manos.</p>
+                                    </label>
                                 </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Confirmar nueva contraseña</label>
-                                    <input type="password" class="form-control w-100" id="NombreCompleto" placeholder="">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="Mail3">
+                                    <label class="form-check-label" for="Mail3">
+                                        <h5>Encuestas</h5>
+                                        <p>Danos tu feedback para que podamos servirte mejor.</p>
+                                    </label>
                                 </div>
-                                <button class="btn btn-primary">Guardar</button>
-                                <button class="btn btn-dark">Cancelar</button>
+                                <button class="btn btn-primary" style="min-width:100px;">Guardar</button>
+                                <button class="btn btn-dark" style="min-width:100px;">Cancelar</button>
                             </form>
                         </div>
                     </div>

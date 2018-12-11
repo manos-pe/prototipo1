@@ -74,10 +74,10 @@
                             <li class="list-group-item list-group-item-action">
                                 <a href="book.html"><i class="fas fa-plus-circle px-2"></i>Pedir nuevo servicio</a>
                             </li>
-                            <li class="list-group-item list-group-item-action bg-light"><a href="settings.html"><i
-                                        class="fas fa-cog px-2"></i>Ajustes
+                            <li class="list-group-item list-group-item-action"><a href="settings.html"><i class="fas fa-cog px-2"></i>Ajustes
                                     de cuenta</a></li>
-                            <li class="list-group-item list-group-item-action"><a href="addresses.html"><i class="fas fa-home px-2"></i>Mis
+                            <li class="list-group-item list-group-item-action bg-light"><a href="addresses.html"><i
+                                        class="fas fa-home px-2"></i>Mis
                                     direcciones</a></li>
                             <li class="list-group-item list-group-item-action"><a href="history.html"><i class="fas fa-history px-2"></i>Historial
                                     de servicios</a></li>
@@ -122,10 +122,10 @@
                             <li class="list-group-item list-group-item-action">
                                 <a href="book.html"><i class="fas fa-plus-circle px-2"></i>Pedir nuevo servicio</a>
                             </li>
-                            <li class="list-group-item list-group-item-action bg-light"><a href="settings.html"><i
-                                        class="fas fa-cog px-2"></i>Ajustes
+                            <li class="list-group-item list-group-item-action"><a href="settings.html"><i class="fas fa-cog px-2"></i>Ajustes
                                     de cuenta</a></li>
-                            <li class="list-group-item list-group-item-action"><a href="addresses.html"><i class="fas fa-home px-2"></i>Mis
+                            <li class="list-group-item list-group-item-action bg-light"><a href="addresses.html"><i
+                                        class="fas fa-home px-2"></i>Mis
                                     direcciones</a></li>
                             <li class="list-group-item list-group-item-action"><a href="history.html"><i class="fas fa-history px-2"></i>Historial
                                     de servicios</a></li>
@@ -143,28 +143,67 @@
                 <div class="col-xl-9 col-lg-9 col-md-8 ml-md-auto pt-2">
                     <!-- Content -->
                     <div class="content pt-4 pb-2 px-5 text-dark">
-                        <h5><a href="settings.html"><i class="fas fa-angle-left m-2"></i>Ajustes de cuenta</a></h5>
-                        <h3 class="text-center text-primary">Cambiar contraseña</h3>
+                        <h5><a href="addresses.html"><i class="fas fa-angle-left m-2"></i>Mis direcciones</a></h5>
+                        <h3 class="text-center text-primary">Editar dirección</h3>
                         <div class="progress w-75 m-auto mt-2" style="height:2px;">
                             <div class="progress-bar bg-dark" style="width:100%"></div>
                         </div>
                         <div class="container px-4 pt-4">
                             <form>
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">Contraseña actual</label>
-                                    <input type="password" class="form-control w-100" id="NombreCompleto" placeholder="">
+                                    <label for="distritos">Distrito</label>
+                                    <select class="form-control" id="distritos">
+                                        <option value="Ancon">Ancón</option>
+                                        <option value="Ate">Ate</option>
+                                        <option value="Barranco">Barranco</option>
+                                        <option value="Bellavista">Bellavista</option>
+                                        <option value="Brena">Breña</option>
+                                        <option value="Callao">Callao</option>
+                                        <option value="Chorrillos">Chorrillos</option>
+                                        <option value="Independencia">Independencia</option>
+                                        <option value="Jesus Maria">Jesus María</option>
+                                        <option value="La Molina">La Molina</option>
+                                        <option value="La Victoria">La Victoria</option>
+                                        <option value="Lima">Lima</option>
+                                        <option value="Lince">Lince</option>
+                                        <option value="Los Olivos">Los Olivos</option>
+                                        <option value="Magadalena">Magdalena</option>
+                                        <option value="Miraflores">Miraflores</option>
+                                        <option value="Pueblo Libre">Pueblo Libre</option>
+                                        <option value="San Borja">San Borja</option>
+                                        <option selected="selected" value="San Isidro">San Isidro</option>
+                                        <option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+                                        <option value="San Juan de Miraflores">San Juan de Miraflores</option>
+                                        <option value="San Luis">San Luis</option>
+                                        <option value="San Martín de Porres">San Martín de Porres</option>
+                                        <option value="San Miguel">San Miguel</option>
+                                        <option value="Santa Anita">Santa Anita</option>
+                                        <option value="Santiago de Surco">Santiago de Surco</option>
+                                        <option value="Surquillo">Surquillo</option>
+                                        <option value="Villa El Salvador">Villa El Salvador</option>
+                                        <option value="Villa María del Triungo">Villa María del Triunfo</option>
+                                    </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Nueva contraseña</label>
-                                    <input type="password" class="form-control w-100" id="exampleInputEmail1"
-                                        aria-describedby="emailHelp" placeholder="">
+                                    <label for="exampleInputPassword1">Nombre (Opcional)</label>
+                                    <input type="text" class="form-control w-100" id="NombreCompleto" placeholder="Ejemplo: mi departamento, mi casa, mi oficina">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">Confirmar nueva contraseña</label>
-                                    <input type="password" class="form-control w-100" id="NombreCompleto" placeholder="">
+                                    <label for="exampleInputPassword1">Dirección</label>
+                                    <input type="text" class="form-control w-100 mb-2" id="NombreCompleto" placeholder="Av. Pezet 353">
+                                    <input type="text" class="form-control w-100" id="NombreCompleto" placeholder="Dpto. 1201">
                                 </div>
-                                <button class="btn btn-primary">Guardar</button>
-                                <button class="btn btn-dark">Cancelar</button>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Teléfono Fijo</label>
+                                    <input type="text" class="form-control w-100" id="NombreCompleto" placeholder="27 0050">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Referencias (Opcional)</label>
+                                    <textarea type="text" class="form-control w-100 mb-2" id="NombreCompleto"
+                                        placeholder="Frente al Golf de San Isidro"></textarea>
+                                </div>
+                                <button class="btn btn-primary mr-1" style="min-width:111px;">Añadir</button>
+                                <button class="btn btn-dark" style="min-width:111px;">Cancelar</button>
                             </form>
                         </div>
                     </div>
