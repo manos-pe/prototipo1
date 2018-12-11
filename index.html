@@ -3,335 +3,341 @@
 <!--<![endif]-->
 
 <head>
-	<meta charset="utf-8">
-	<title>Manos - Menos problemas, Más Vida</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/flexslider.min.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/font-icon.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="shortcut icon" href="images/manos.ico "/>
+  <meta charset="utf-8">
+  <title>Manos - Menos problemas, Más Vida</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/flexslider.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/font-icon.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="images/manos.ico " />
   <link rel="apple-touch-icon" sizes="128x128" href="images/manos_logo.png">
   <link rel="icon" sizes="192x192" href="images/manos_logo.png">
 </head>
 
 <body>
-<!-- modal section-->
-<div class="modal fade" id="applyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title text-center" id="exampleModalLabel">CÓMO SER UN MANOS</h5>
-			</div>
-			<form @submit.prevent="apply" id="phone-form" method="POST">
-				<div class="modal-body">
-					<div class="row">
-						<div class="col-md-12">
-							<div style="text-align:center;margin:15px">
-								<img style="width:150px;" src="images/manos.png">
-							</div>
-							<p>Ingresa tus datos para recibir un mensaje con todos los pasos para ser parte de nuestra familia MANOS.</p>
-							<div class="col-sm-6 col-xs-12">
-								<b>Ingresa tu Nombre:</b>
-								<br/>
-								<input v-model="form.name" id="name-input" type='text' class="form-control" required/>
-							</div>
-							<div class="col-sm-6 col-xs-12">
-								<b>Ingresa tu Correo:</b>
-								<input v-model="form.email" id="email-input" type='email' class="form-control" required/>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal-footer">
-					<button type="button" data-dismiss="modal" class="btn btn-danger btn-close">Cancelar</button>
-					<button type="submit" class="btn btn-primary">Aceptar</button>
-				</div>
-			</form>
-		</div>
-	</div>
-</div>
-<!-- header section -->
-<section id="intro" class="banner" role="banner">
-  <header id="header">
-    <div class="header-content clearfix">
-			<a class="logo"><img style="width:150px"src="images/manos.png"></a>
-      <nav class="navigation" role="navigation">
-				<ul class="primary-nav">
-          <li><a href="#intro">INICIO</a></li>
-					<li><a href="#howToWork">CÓMO FUNCIONA</a></li>
-          <li><a href="#packages">PAQUETES</a></li>
-					<li><a href="#services">COMPROMISO</a></li>
-					<li><a href="#testimonials">CLIENTES</a></li>
-					<li><a href="login.html" class="btn btn-large" style="background:#23527c;border:2px solid #23527c; color:white">INICIAR SESIÓN</a></li>></li>
-        </ul>
-      </nav>
-      <a href="#" class="nav-toggle">Menu<span></span></a>
-		</div>
-  </header>
-  <!-- banner text -->
-  <div class="container">
-    <div class="col-md-10 col-md-offset-1">
-      <div class="banner-text text-center">
-        <h1>Especialistas en la limpieza de tu hogar y oficina</h1>
-        <p></p>
-				<button class="btn btn-large" style="background:#23527c;border:2px solid #23527c; color:white" data-toggle="modal" data-target="#FirstServiceModal">Solicitar Servicio</a> </div>
-      <!-- banner text -->
+  <!-- modal section-->
+  <div class="modal fade" id="applyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabel">CÓMO SER UN MANOS</h5>
+        </div>
+        <form @submit.prevent="apply" id="phone-form" method="POST">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-12">
+                <div style="text-align:center;margin:15px">
+                  <img style="width:150px;" src="images/manos.png">
+                </div>
+                <p>Ingresa tus datos para recibir un mensaje con todos los pasos para ser parte de nuestra familia
+                  MANOS.</p>
+                <div class="col-sm-6 col-xs-12">
+                  <b>Ingresa tu Nombre:</b>
+                  <br />
+                  <input v-model="form.name" id="name-input" type='text' class="form-control" required />
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                  <b>Ingresa tu Correo:</b>
+                  <input v-model="form.email" id="email-input" type='email' class="form-control" required />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-danger btn-close">Cancelar</button>
+            <button type="submit" class="btn btn-primary">Aceptar</button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
-</section>
+  <!-- header section -->
+  <section id="intro" class="banner" role="banner">
+    <header id="header">
+      <div class="header-content clearfix">
+        <a class="logo"><img style="width:150px" src="images/manos.png"></a>
+        <nav class="navigation" role="navigation">
+          <ul class="primary-nav">
+            <li><a href="#intro">INICIO</a></li>
+            <li><a href="#howToWork">CÓMO FUNCIONA</a></li>
+            <li><a href="#packages">PAQUETES</a></li>
+            <li><a href="#services">COMPROMISO</a></li>
+            <li><a href="#testimonials">CLIENTES</a></li>
+            <li><a href="login.html" class="btn btn-large" style="background:#23527c;border:2px solid #23527c; color:white">INICIAR
+                SESIÓN</a></li>></li>
+          </ul>
+        </nav>
+        <a href="#" class="nav-toggle">Menu<span></span></a>
+      </div>
+    </header>
+    <!-- banner text -->
+    <div class="container">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="banner-text text-center">
+          <h1>Especialistas en la limpieza de tu hogar y oficina</h1>
+          <p></p>
+          <button class="btn btn-large" style="background:#23527c;border:2px solid #23527c; color:white" data-toggle="modal"
+            data-target="#FirstServiceModal">Solicitar Servicio</a>
+        </div>
+        <!-- banner text -->
+      </div>
+    </div>
+  </section>
 
-<!-- Modal section -->
-<div id="FirstServiceModal" class="modal fade d-flex" style="width:75%; margin:auto;">
-  <div class="modal-dialogue">
-    <div class="modal-content text-center">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4>¿Primera vez que vas<br>a usar Manos?</h4>
-      </div>
-      <div class="modal-body">
-        <a href="login.html" class="btn btn-primary">Sí</a><br>
-        <a href="welcome.html" class="btn btn-primary">No</a>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- header section -->
-<!-- working section -->
-<section id="howToWork" class="working working-section">
-  <div class="container">
-    <div class="row">
-			<div class="col-md-12 text-center">
-				<h4 class="section-title">¿Cómo funciona MANOS?</h4>
-			</div>
-      <div class="col-md-4 col-sm-6 working text-center"> <span class="icon icon-calendar custom-icon large"></span>
-          <h5>1. Programe un Servicio</h5>
-					<p>Programe la fecha y hora en la cual desea que un Manos se acerque a su casa.</p>
-      </div>
-      <div class="col-md-4 col-sm-6 working text-center"> <span class="icon icon-profile-female custom-icon large"></span>
-          <h5>2. Elija a su Manos favorito</h5>
-					<p>Usted puede decidir qué Manos irá a dar solución a tus problemas y poder calificarlo posteriormente por su servicio.</p>
-      </div>
-      <div class="col-md-4 col-sm-12 working text-center"> <span class="icon icon-heart custom-icon large"></span>
-          <h5>3. Disfrute el servicio</h5>
-					<p>Solo disfrute el servicio, siempre tenemos un Manos especializado en tus problemas.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- working section -->
-<!-- packages section -->
-<section id="packages" class="packages packages-section">
-  <div class="container">
-    <div class="row">
-			<div class="col-md-12 text-center">
-				<h4 class="section-title">NUESTROS PAQUETES</h4>
-			</div>
-			<div class="card  col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12 text-center">
-				<div class="card-header">
-					<h4>Básico</h4>
-					<h5>3 Horas</h5>
-				</div>
-				<div class="card-body">
-					<p><strong>Perfecto para:</strong></p>
-						<ul>
-							<li>- Departamentos</li>
-							<li>- Baños y Cocinas</li>
-							<li>- Otros</li>
-						</ul>
-					<h4>S/.45</h4>
-					<a href="#contact" class="btn btn-large">Solicitar</a>
-				</div>
-			</div>
-			<div class="card card-center col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12 text-center">
-				<div class="card-header">
-					<span class="fa fa-bookmark"></span>
-					<h4>Premium</h4>
-					<h5>5 Horas <p class="discount"> + 13% descuento <i class="fa fa-tags"></i></</p></h5>
-				</div>
-				<div class="card-body">
-					<p><strong>Perfecto para:</strong></p>
-						<ul>
-							<li>- Casas Pequeñas/Medianas</li>
-							<li>- Habitaciones</li>
-							<li>- Otros</li>
-						</ul>
-					<h4>S/.65</h4>
-					<a href="#contact" class="btn btn-large">Solicitar</a>
-				</div>
-			</div>
-			<div class="card  col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12 text-center">
-				<div class="card-header">
-					<h4>Ejecutivo</h4>
-					<h5>8 Horas <p class="discount"> + 25% descuento <i class="fa fa-tags"></i></</p></h5>
-				</div>
-				<div class="card-body">
-					<p><strong>Perfecto para:</strong></p>
-						<ul>
-							<li>- Casa Completa</li>
-							<li>- Habitaciones Grandes</li>
-							<li>- Otros</li>
-						</ul>
-					<h4>S/.90</h4>
-					<a href="#contact" class="btn btn-large">Solicitar</a>
-				</div>
-			</div>
-    </div>
-  </div>
-</section>
-<!-- packages section-->
-<!-- services section -->
-<section id="services" class="services service-section">
-  <div class="container">
-    <div class="row">
-			<div class="col-md-12 text-center">
-				<h4 class="section-title">NUESTRO COMPROMISO</h4>
-			</div>
-      <div class="col-md-4 col-xs-6 services text-center"> <span class="icon icon-heart custom-icon-2 medium"></span>
-        <div class="services-content">
-          <h5>Confianza</h5>
-          <p>Con más de <strong>1200 SERVICIOS</strong> realizados y <strong>600 CLIENTES</strong> felices con nuestro trato</p>
-					<!-- <p> somos una plataforma orientada al cliente que busca darle siempre lo mejor.</p> -->
+  <!-- Modal section -->
+  <div id="FirstServiceModal" class="modal fade d-flex" style="width:75%; margin:auto;">
+    <div class="modal-dialogue">
+      <div class="modal-content text-center">
+        <div class="modal-header" style="background-color:#23517A;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="text-light">¿Primera vez que vas<br>a usar Manos?</h4>
         </div>
-      </div>
-      <div class="col-md-4 col-xs-6 services text-center"> <span class="icon icon-hourglass custom-icon-2 medium"></span>
-        <div class="services-content">
-          <h5>Rapidez</h5>
-          <p>Nos comunicamos contigo en minutos y damos solución a tus problemas en menos de <strong>1 DÍA</strong></p>
-					<!-- <p>, una Manos siempre estará lista para ayudarte.</p> -->
-        </div>
-      </div>
-      <div class="col-md-4 col-xs-6 services text-center"> <span class="icon icon-calendar custom-icon-2 medium"></span>
-        <div class="services-content">
-          <h5>Disponibilidad</h5>
-          <p>Estamos para ofrecerte nuestros servicios cualquier día de la semana, incluso <strong>FERIADOS</strong>.</p>
-					<!-- <p> Te ofrecemos una casa limpia, todo el año.</p> -->
-        </div>
-      </div>
-      <div class="col-md-4 col-xs-6 services text-center"> <span class="icon icon-ribbon custom-icon-2 medium"></span>
-        <div class="services-content">
-          <h5>Calidad</h5>
-          <p>Ponemos a tu disposición, personal completamente <strong>EVALUADO Y CALIFICADO</strong></p>
-					<!-- <p>, listos para darte un par de Manos con tus problemas.</p> -->
-        </div>
-      </div>
-      <div class="col-md-4 col-xs-6 services text-center"> <span class="icon icon-shield custom-icon-2 medium"></span>
-        <div class="services-content">
-          <h5>Garantía</h5>
-					<p>En <strong>MANOS</strong>, todos nuestros servicios tienen una alta calidad, para mayor información lee nuestra sección de <strong><a style="color:#00A1B1" href="users/#faq">Preguntas Frecuentes</a></strong></p>
-        </div>
-      </div>
-      <div class="col-md-4 col-xs-6 services text-center"> <span class="icon icon-trophy custom-icon-2 medium"></span>
-        <div class="services-content">
-          <h5>Precios</h5>
-					<p>En <strong>MANOS</strong> tenemos diferentes precios para tus diferentes tipos de necesidades.</p>
-					<!-- <p>Desde una limpieza rápida, hasta una de <strong>CASA COMPLETA</strong>.</p> -->
+        <div class="modal-body">
+          <a href="welcome.html" class="btn btn-primary py-2" role="button" style="min-width: 100px;">Sí</a><br>
+          <a href="login.html" class="btn btn-primary py-2" role="button" style="min-width: 100px;">No</a>
         </div>
       </div>
     </div>
   </div>
-</section>
-<!-- services section -->
-<!-- Testimonials section -->
-<section id="testimonials" class="section testimonials no-padding">
-	<div class="container">
-			<div class="col-md-12 text-center">
-				<h4 class="section-title">LO QUE DICEN NUESTROS CLIENTES</h4>
-			</div>
-	</div>
-  <div class="container-fluid">
-    <div class=" no-gutter">
-      <div class="flexslider">
-        <ul class="slides">
-          <li>
-            <div class="col-md-12">
-							<img src="images/client1.jpg" alt="">
-              <blockquote>
-                <h1>"Buenísima atención al cliente! Envían personal de confianza y muy enfocados en la buena atención al cliente!" </h1>
-                <p>Rocio, 8 servicios.</p>
-              </blockquote>
-            </div>
-          </li>
-          <li>
-            <div class="col-md-12">
-							<img src="images/client2.jpg" alt="">
-              <blockquote>
-                <h1>"Muy buen servicio! Rápido y efectivo! Recomendadísimo para cualquier servicio que necesiten" </h1>
-                <p>Marianella, 5 servicios.</p>
-              </blockquote>
-            </div>
-          </li>
-          <li>
-            <div class="col-md-12">
-							<img src="images/client3.jpg" alt="">
-              <blockquote>
-                <h1>"Muy buen servicio. Eficiente, rápidos y serios. Lo super recomiendo!" </h1>
-                <p>Alonso, 4 servicios.</p>
-              </blockquote>
-            </div>
-          </li>
-          <li>
-            <div class="col-md-12">
-							<img src="images/client4.jpg" alt="">
-              <blockquote>
-                <h1>"Excelente servicio! Rápidez en la respuesta y muy cálida atención! Lo recomiendo!" </h1>
-                <p>Lucía, 5 servicios.</p>
-              </blockquote>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- contact section -->
-<!-- Footer section -->
-<footer class="footer">
-  <div class="footer-top section">
+  <!-- header section -->
+  <!-- working section -->
+  <section id="howToWork" class="working working-section">
     <div class="container">
       <div class="row">
-        <div class="footer-col col-md-6">
-          <h5>Sobre Manos</h5>
-          <p>Lima, Perú<br>
-            954 186 451<br>
-            contacto@manos.pe</p>
-          <p>Copyright © 2017 Manos. Todos los derechos reservados. 	</p>
+        <div class="col-md-12 text-center">
+          <h4 class="section-title">¿Cómo funciona MANOS?</h4>
         </div>
-        <div class="footer-col col-md-3">
-          <h5>Secciones </h5>
-          <p>
-          <ul>
-						<li><a href="#">Lo que hacemos</a></li>
-						<li><a href="faqs.html" >Preguntas Frecuentes</a></li>
-						<li><a href="privacy.html" >Política de Privacidad</a></li>
-            <li><a href="terms.html" >Legal</a></li>
-          </ul>
-          </p>
+        <div class="col-md-4 col-sm-6 working text-center"> <span class="icon icon-calendar custom-icon large"></span>
+          <h5>1. Programe un Servicio</h5>
+          <p>Programe la fecha y hora en la cual desea que un Manos se acerque a su casa.</p>
         </div>
-        <div class="footer-col col-md-3">
-          <h5>Encuéntranos en:</h5>
-          <ul class="footer-share">
-            <li><a href="https://www.facebook.com/ManosApp/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://www.instagram.com/manosapp/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <div class="col-md-4 col-sm-6 working text-center"> <span class="icon icon-profile-female custom-icon large"></span>
+          <h5>2. Elija a su Manos favorito</h5>
+          <p>Usted puede decidir qué Manos irá a dar solución a tus problemas y poder calificarlo posteriormente por su
+            servicio.</p>
+        </div>
+        <div class="col-md-4 col-sm-12 working text-center"> <span class="icon icon-heart custom-icon large"></span>
+          <h5>3. Disfrute el servicio</h5>
+          <p>Solo disfrute el servicio, siempre tenemos un Manos especializado en tus problemas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- working section -->
+  <!-- packages section -->
+  <section id="packages" class="packages packages-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h4 class="section-title">NUESTROS PAQUETES</h4>
+        </div>
+        <div class="card  col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12 text-center">
+          <div class="card-header">
+            <h4>Básico</h4>
+            <h5>3 Horas</h5>
+          </div>
+          <div class="card-body">
+            <p><strong>Perfecto para:</strong></p>
+            <ul>
+              <li>- Departamentos</li>
+              <li>- Baños y Cocinas</li>
+              <li>- Otros</li>
+            </ul>
+            <h4>S/.45</h4>
+            <a href="#contact" class="btn btn-large">Solicitar</a>
+          </div>
+        </div>
+        <div class="card card-center col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12 text-center">
+          <div class="card-header">
+            <span class="fa fa-bookmark"></span>
+            <h4>Premium</h4>
+            <h5>5 Horas <p class="discount"> + 13% descuento <i class="fa fa-tags"></i></</p> </h5> </div> <div class="card-body">
+                <p><strong>Perfecto para:</strong></p>
+                <ul>
+                  <li>- Casas Pequeñas/Medianas</li>
+                  <li>- Habitaciones</li>
+                  <li>- Otros</li>
+                </ul>
+                <h4>S/.65</h4>
+                <a href="#contact" class="btn btn-large">Solicitar</a>
+          </div>
+        </div>
+        <div class="card  col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12 text-center">
+          <div class="card-header">
+            <h4>Ejecutivo</h4>
+            <h5>8 Horas <p class="discount"> + 25% descuento <i class="fa fa-tags"></i></</p> </h5> </div> <div class="card-body">
+                <p><strong>Perfecto para:</strong></p>
+                <ul>
+                  <li>- Casa Completa</li>
+                  <li>- Habitaciones Grandes</li>
+                  <li>- Otros</li>
+                </ul>
+                <h4>S/.90</h4>
+                <a href="#contact" class="btn btn-large">Solicitar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- packages section-->
+  <!-- services section -->
+  <section id="services" class="services service-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h4 class="section-title">NUESTRO COMPROMISO</h4>
+        </div>
+        <div class="col-md-4 col-xs-6 services text-center"> <span class="icon icon-heart custom-icon-2 medium"></span>
+          <div class="services-content">
+            <h5>Confianza</h5>
+            <p>Con más de <strong>1200 SERVICIOS</strong> realizados y <strong>600 CLIENTES</strong> felices con
+              nuestro trato</p>
+            <!-- <p> somos una plataforma orientada al cliente que busca darle siempre lo mejor.</p> -->
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-6 services text-center"> <span class="icon icon-hourglass custom-icon-2 medium"></span>
+          <div class="services-content">
+            <h5>Rapidez</h5>
+            <p>Nos comunicamos contigo en minutos y damos solución a tus problemas en menos de <strong>1 DÍA</strong></p>
+            <!-- <p>, una Manos siempre estará lista para ayudarte.</p> -->
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-6 services text-center"> <span class="icon icon-calendar custom-icon-2 medium"></span>
+          <div class="services-content">
+            <h5>Disponibilidad</h5>
+            <p>Estamos para ofrecerte nuestros servicios cualquier día de la semana, incluso <strong>FERIADOS</strong>.</p>
+            <!-- <p> Te ofrecemos una casa limpia, todo el año.</p> -->
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-6 services text-center"> <span class="icon icon-ribbon custom-icon-2 medium"></span>
+          <div class="services-content">
+            <h5>Calidad</h5>
+            <p>Ponemos a tu disposición, personal completamente <strong>EVALUADO Y CALIFICADO</strong></p>
+            <!-- <p>, listos para darte un par de Manos con tus problemas.</p> -->
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-6 services text-center"> <span class="icon icon-shield custom-icon-2 medium"></span>
+          <div class="services-content">
+            <h5>Garantía</h5>
+            <p>En <strong>MANOS</strong>, todos nuestros servicios tienen una alta calidad, para mayor información lee
+              nuestra sección de <strong><a style="color:#00A1B1" href="users/#faq">Preguntas Frecuentes</a></strong></p>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-6 services text-center"> <span class="icon icon-trophy custom-icon-2 medium"></span>
+          <div class="services-content">
+            <h5>Precios</h5>
+            <p>En <strong>MANOS</strong> tenemos diferentes precios para tus diferentes tipos de necesidades.</p>
+            <!-- <p>Desde una limpieza rápida, hasta una de <strong>CASA COMPLETA</strong>.</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- services section -->
+  <!-- Testimonials section -->
+  <section id="testimonials" class="section testimonials no-padding">
+    <div class="container">
+      <div class="col-md-12 text-center">
+        <h4 class="section-title">LO QUE DICEN NUESTROS CLIENTES</h4>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class=" no-gutter">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+              <div class="col-md-12">
+                <img src="images/client1.jpg" alt="">
+                <blockquote>
+                  <h1>"Buenísima atención al cliente! Envían personal de confianza y muy enfocados en la buena atención
+                    al cliente!" </h1>
+                  <p>Rocio, 8 servicios.</p>
+                </blockquote>
+              </div>
+            </li>
+            <li>
+              <div class="col-md-12">
+                <img src="images/client2.jpg" alt="">
+                <blockquote>
+                  <h1>"Muy buen servicio! Rápido y efectivo! Recomendadísimo para cualquier servicio que necesiten"
+                  </h1>
+                  <p>Marianella, 5 servicios.</p>
+                </blockquote>
+              </div>
+            </li>
+            <li>
+              <div class="col-md-12">
+                <img src="images/client3.jpg" alt="">
+                <blockquote>
+                  <h1>"Muy buen servicio. Eficiente, rápidos y serios. Lo super recomiendo!" </h1>
+                  <p>Alonso, 4 servicios.</p>
+                </blockquote>
+              </div>
+            </li>
+            <li>
+              <div class="col-md-12">
+                <img src="images/client4.jpg" alt="">
+                <blockquote>
+                  <h1>"Excelente servicio! Rápidez en la respuesta y muy cálida atención! Lo recomiendo!" </h1>
+                  <p>Lucía, 5 servicios.</p>
+                </blockquote>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
     </div>
-  </div>
-  <!-- footer top -->
+  </section>
+  <!-- contact section -->
+  <!-- Footer section -->
+  <footer class="footer">
+    <div class="footer-top section">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col col-md-6">
+            <h5>Sobre Manos</h5>
+            <p>Lima, Perú<br>
+              954 186 451<br>
+              contacto@manos.pe</p>
+            <p>Copyright © 2017 Manos. Todos los derechos reservados. </p>
+          </div>
+          <div class="footer-col col-md-3">
+            <h5>Secciones </h5>
+            <p>
+              <ul>
+                <li><a href="#">Lo que hacemos</a></li>
+                <li><a href="faqs.html">Preguntas Frecuentes</a></li>
+                <li><a href="privacy.html">Política de Privacidad</a></li>
+                <li><a href="terms.html">Legal</a></li>
+              </ul>
+            </p>
+          </div>
+          <div class="footer-col col-md-3">
+            <h5>Encuéntranos en:</h5>
+            <ul class="footer-share">
+              <li><a href="https://www.facebook.com/ManosApp/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://www.instagram.com/manosapp/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer top -->
 
-</footer>
-<!-- Footer section -->
-<!-- JS FILES -->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.flexslider-min.js"></script>
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/modernizr.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
-<script src="js/vue.min.js"></script>
-<script src="js/main.js"></script>
+  </footer>
+  <!-- Footer section -->
+  <!-- JS FILES -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="js/modernizr.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+  <script src="js/vue.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
