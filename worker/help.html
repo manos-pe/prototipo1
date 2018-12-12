@@ -134,82 +134,121 @@
                         <div class="progress w-75 m-auto mt-2" style="height:2px;">
                             <div class="progress-bar bg-dark" style="width:100%"></div>
                         </div>
-                        <div class="row pt-3 px-4 w-100">
-                            <div class="col-3 text-center">
-                                <h5>Foto</h5>
-                                <i class="fas fa-user fa-5x text-secondary"></i><br>
-                            </div>
-                            <div class="col-5">
-                                <h5>Nombre completo</h5>
-                                <p class="mb-3">Paolo Bejarano</p>
-                                <h5>Número celular</h5>
-                                <p class="mb-3">+51 983 776 433</p>
-                                <h5>Email</h5>
-                                <p class="mb-3">paolobejarano@hotmail.com</p>
-                                <a href="settings-edit-mail.html" class="text-secondary">Cambiar mail</a><br>
-                                <a href="settings-change-email-notifications.html" class="text-secondary">Preferencias
-                                    de notificaciones</a>
-                            </div>
-                            <div class="col-4">
-                                <h5>Contraseña</h5>
-                                <p>**********</p>
-                                <a class="text-secondary" href="settings-change-password.html">Cambiar contraseña</a>
-                            </div>
-                        </div>
-                        <h3 class="text-center mt-3 text-primary">Preferencias</h3>
-                        <div class="progress w-75 m-auto mt-2" style="height:2px;">
-                            <div class="progress-bar bg-dark" style="width:100%"></div>
-                        </div>
-                        <div class="row pt-3 mx-3 w-100">
-                            <div class="col-6">
-                                <h5 class="">Distritos preferidos</h5>
-                                <p class="m-0 p-0"><i class="fas fa-map-marker-alt mx-1"></i>Lince</p>
-                                <p class="m-0 p-0"><i class="fas fa-map-marker-alt mx-1"></i>Miraflores</p>
-                                <p class="m-0 p-0"><i class="fas fa-map-marker-alt mx-1"></i>San Isidro</p>
-                                <p class="m-0 p-0"><i class="fas fa-map-marker-alt mx-1"></i>Santiago de Surco</p>
-                                <div class="mt-1">
-                                    <a href="settings-edit-districts.html" class="text-secondary">Cambiar
-                                        preferencia
-                                        de
-                                        distritos</a>
+                        <div class="pt-3 px-5" id="accordion">
+                            <h4>Necesito ayuda con...</h4>
+                            <div class="card">
+                                <div class="card-header">
+                                    <a href="#collapse1" data-parent="#accordion" data-toggle="collapse">
+                                        El uso de la plataforma de Manos
+                                    </a>
+                                </div>
+
+                                <div id="collapse1" class="collapse">
+                                    <div class="card-body">
+                                        Si tienes dudas con el uso de nuestra plataforma, te sugerimos revisar las <a
+                                            href="faqs.html" target="_blank">Preguntas Frecuentes</a>. Si no encuentras
+                                        respuesta a tu
+                                        pregunta, contáctanos al Whatsapp <i class="fab fa-whatsapp text-sucess"></i>
+                                        +51 923 468 905
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-6 border-left border-light">
-                                <h5>Días preferidos</h5>
-                                <p class="m-0 p-0"><i class="fas fa-calendar-check mx-1"></i>Viernes</p>
-                                <p class="m-0 p-0"><i class="fas fa-calendar-check mx-1"></i>Sábado</p>
-                                <p class="m-0 p-0"><i class="fas fa-calendar-check mx-1"></i>Domingo</p>
-                                <h5 class="mt-2">Horarios preferidos</h5>
-                                <p class="m-0 p-0"><i class="fas fa-hourglass-half mx-1"></i>Tarde</p>
-                                <p class="m-0 p-0"><i class="fas fa-hourglass-half mx-1"></i>Noche</p>
-                                <div class="mt-1">
-                                    <a href="settings-edit-days.html" class="text-secondary">Cambiar días preferidos</a><br>
-                                    <a href="settings-edit-schedule.html" class="text-secondary">Cambiar
-                                        horarios preferidos</a>
+                            <div class="card">
+                                <div class="card-header">
+                                    <a href="#collapse2" data-parent="#accordion" data-toggle="collapse">
+                                        Mi cuenta (contraseña, mail, etc)
+                                    </a>
+                                </div>
+
+                                <div id="collapse2" class="collapse">
+                                    <div class="card-body">
+                                        Con un servicio pasado.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <h3 class="text-center mt-3 text-primary">Contacto de confianza</h3>
-                        <div class="progress w-75 m-auto mt-2" style="height:2px;">
-                            <div class="progress-bar bg-dark" style="width:100%"></div>
-                        </div>
-                        <div class="row pt-3 m-auto px-4 w-100">
-                            <div class="col-7">
-                                <h5>Nombre completo</h5>
-                                <p class="mb-3">Cristian Arens</p>
+                            <div class="card">
+                                <div class="card-header">
+                                    <a href="#collapse3" data-parent="#accordion" data-toggle="collapse">
+                                        Con una solicitud de servicio
+                                    </a>
+                                </div>
+                                <div id="collapse3" class="collapse">
+                                    <div class="card-body">
+                                        Si necesitas ayuda con una solicitud de servicio, escríbenos al WhatsApp <i
+                                            class="fab fa-whatsapp text-success"></i>
+                                        +51 923 468 905
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-5 border-left border-light">
-                                <h5>Número celular</h5>
-                                <p class="mb-3">+51 959 675 458</p>
+                            <div class="card">
+                                <div class="card-header">
+                                    <a href="#collapse4" data-parent="#accordion" data-toggle="collapse">
+                                        Con un servicio pasado
+                                    </a>
+                                </div>
+                                <div id="collapse4" class="collapse">
+                                    <div class="card-body">
+                                        Al usar los servicios de MANOS estas aceptando los términos y condiciones que
+                                        se
+                                        encuentran en : www.manos.pe/TyC
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-12 mt-1">
-                                <a href="settings-edit-contact.html" class="text-secondary">Cambiar datos de
-                                    contacto de confiaza</a>
+                            <div class="card">
+                                <div class="card-header">
+                                    <a href="#collapse5" data-parent="#accordion" data-toggle="collapse">
+                                        Con los pagos
+                                    </a>
+                                </div>
+                                <div id="collapse5" class="collapse">
+                                    <div class="card-body">
+                                        Si tienes un problema con los pagos, escríbenos al Whatsapp <i class="fab fa-whatsapp text-success"></i>
+                                        +51 923 468 905
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <a href="#collapse6" data-parent="#accordion" data-toggle="collapse">
+                                        Consultas
+                                    </a>
+                                </div>
+                                <div id="collapse6" class="collapse">
+                                    <div class="card-body">
+                                        Si tienes una consulta,
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <a href="#collapse7" data-parent="#accordion" data-toggle="collapse">
+                                        Sugerencias
+                                    </a>
+                                </div>
+                                <div id="collapse7" class="collapse">
+                                    <div class="card-body">
+                                        Si tienes una sugerencia, puedes dárnosla en el siguiente formulario o
+                                        escribirnos al
+                                        correo manosapp.contacto@gmail.com
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <a href="#collapse8" data-parent="#accordion" data-toggle="collapse">
+                                        Otros
+                                    </a>
+                                </div>
+                                <div id="collapse8" class="collapse">
+                                    <div class="card-body">
+                                        Si necesitas contactarnos por otros motivos, llena el siguiente <a href="#"
+                                            class="" data-toggle="modal" data-target="#ModalOther">Formulario</a>.
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
         </section>
         <!-- Bootstrap script -->
