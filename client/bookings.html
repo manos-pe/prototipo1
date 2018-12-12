@@ -22,7 +22,7 @@
     <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body class="text-dark">
     <!-- Navbar -->
     <nav class="d-none d-md-block shadow p-4 mb-2 fixed-top bg-white navbar navbar-light bg-light">
         <div class="m-auto container">
@@ -146,7 +146,7 @@
                 <div class="row px-3">
                     <div class="col-lg-6 col-xl-4 mt-4">
                         <!-- Card 3 -->
-                        <div class="card w-100 m-auto text-center border-dark">
+                        <div class="card w-100 m-auto text-center border">
                             <!-- Card Image -->
                             <img class="card-img-top" src="../images/home1.jpeg" alt="Apartment" />
 
@@ -183,7 +183,7 @@
                     </div>
                     <div class="col-lg-6 col-xl-4 mt-4">
                         <!-- Card 1 -->
-                        <div class="card w-100 m-auto text-center border-dark">
+                        <div class="card w-100 m-auto text-center border">
                             <!-- Card Image -->
                             <img class="card-img-top" src="../images/home2.jpeg" alt="Apartment" />
 
@@ -219,7 +219,7 @@
                     </div>
                     <div class="col-lg-6 col-xl-4 mt-4">
                         <!-- Card 3 -->
-                        <div class="card w-100 m-auto text-center border-dark">
+                        <div class="card w-100 m-auto text-center border">
                             <!-- Card Image -->
                             <img class="card-img-top" src="../images/home3.jpeg" alt="Apartment" />
 
@@ -255,7 +255,8 @@
                             <div class="container mb-3">
                                 <div class="row">
                                     <div class="col">
-                                        <button class="btn btn-outline-primary border" style="min-width: 110px;">Ver
+                                        <button class="btn btn-outline-primary border" style="min-width: 110px;"
+                                            data-toggle="modal" data-target="#Receipt">Ver
                                             recibo</button>
                                     </div>
                                     <div class="col">
@@ -274,7 +275,7 @@
                 <div class="row px-3">
                     <div class="col-lg-6 col-xl-4 mt-4">
                         <!-- Card 1 -->
-                        <div class="card w-100 m-auto text-center border-dark">
+                        <div class="card w-100 m-auto text-center border">
                             <!-- Card Image -->
                             <img class="card-img-top" src="../images/home4.jpeg" alt="Apartment" />
 
@@ -309,7 +310,8 @@
                             <div class="container mb-3">
                                 <div class="row">
                                     <div class="col">
-                                        <button class="btn btn-outline-primary border" style="min-width: 110px;">Ver
+                                        <button class="btn btn-outline-primary border" data-toggle="modal" data-target="#Receipt"
+                                            style="min-width: 110px;">Ver
                                             recibo</button>
                                     </div>
                                     <div class="col">
@@ -356,22 +358,8 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-body">
-                                <h5 class="text-center p-3">Espera unos minutos hasta que alguien postule<br> a este
-                                    trabajo.</h5>
-                                <div class="content m-auto text-center">
-                                    <button type="button" class="btn btn-outline-primary border mx-2" data-dismiss="modal"
-                                        style="min-width:110px;">Regresar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modal fade" id="Receipt" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <h5 class="text-center p-3">Espera unos minutos hasta que alguien postule<br> a este
+                                <h5 class="text-center p-3 text-dark">Espera unos minutos hasta que alguien postule<br>
+                                    a este
                                     trabajo.</h5>
                                 <div class="content m-auto text-center">
                                     <button type="button" class="btn btn-outline-primary border mx-2" data-dismiss="modal"
@@ -446,6 +434,49 @@
                                         style="min-width:110px;">Cancelar</button>
                                     <button type="button" class="btn btn-secondary border mx-2" style="min-width:110px;">Calificar</button>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="Receipt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-dark" id="exampleModalLabel">Recibo</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body text-dark">
+                                <table class="table table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td scope="row">Servicio de limpieza 5 horas</td>
+                                            <td>S/65.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Subtotal</td>
+                                            <td>S/ 65.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Recargo</td>
+                                            <td>S/ 0.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Descuento</td>
+                                            <td>S/ 0.00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Total</th>
+                                            <td>S/ 65.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-primary border m-auto" data-dismiss="modal">Cerrar</button>
                             </div>
                         </div>
                     </div>

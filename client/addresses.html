@@ -144,8 +144,8 @@
             <div class="progress-bar bg-dark" style="width:100%"></div>
           </div>
           <div class="card-columns pt-3 px-4">
-            <div class="card">
-              <div class="card-header text-center">
+            <div class="card border">
+              <div class="card-header text-center border-bottom">
                 <h5><a href="addresses-new-address.html">Agregar nueva dirección</a></h5>
               </div>
               <div class="card-body text-center">
@@ -154,8 +154,8 @@
                 </a>
               </div>
             </div>
-            <div class="card">
-              <div class="card-header text-center">
+            <div class="card border">
+              <div class="card-header text-center border-bottom">
                 <h5 class="text-primary">Departamento</h5>
               </div>
               <div class="card-body">
@@ -163,14 +163,14 @@
                 <p>San Isidro</p>
                 <p>Referencias: Frente al Golf de San Isidro</p>
               </div>
-              <div class="card-footer text-center">
+              <div class="card-footer text-center border-top">
                 <a href="addresses-edit.html">Editar</a>
                 <span class="mx-2">|</span>
-                <a href="#" class="text-danger">Eliminar</a>
+                <a href="#" class="text-danger" data-toggle="modal" data-target="#ConfirmationModal">Eliminar</a>
               </div>
             </div>
-            <div class="card">
-              <div class="card-header text-center">
+            <div class="card border">
+              <div class="card-header text-center border-bottom">
                 <h5 class="text-primary">Oficina</h5>
               </div>
               <div class="card-body">
@@ -178,10 +178,10 @@
                 <p>San Isidro</p>
                 <p>Referencias: A 2 cuadras de Paseo de la República</p>
               </div>
-              <div class="card-footer text-center">
+              <div class="card-footer text-center border-top">
                 <a href="#">Editar</a>
                 <span class="mx-2">|</span>
-                <a href="#" class="text-danger">Eliminar</a>
+                <a href="#" class="text-danger" data-toggle="modal" data-target="#ConfirmationModal">Eliminar</a>
               </div>
             </div>
           </div>
@@ -193,6 +193,22 @@
     </div>
     </div>
   </section>
+
+  <!--Confirmation Modal-->
+  <div class="modal fade" id="ConfirmationModal" tabindex="-1" role="dialog" aria-labelledby="ConfirmationModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <h5 class="text-dark text-center">¿Seguro que desea borrar esta dirección?</h5>
+          <div class="mt-3 mx-auto">
+            <button class="btn btn-outline-primary border mr-1" data-dismiss="modal">Cancelar</button>
+            <button class="btn btn-outline-danger border ml-1">Eliminar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- Bootstrap script -->
 
   <script type="text/javascript" src="../bower_components/wickedpicker/src/wickedpicker.js"></script>

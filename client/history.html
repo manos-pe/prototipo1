@@ -148,7 +148,7 @@
                         <div class="row px-3">
                             <div class="col-lg-6 col-xl-4 mt-4">
                                 <!-- Card 1 -->
-                                <div class="card w-100 m-auto text-center border-dark">
+                                <div class="card w-100 m-auto text-center border">
                                     <!-- Card Image -->
                                     <img class="card-img-top" src="../images/home4.jpeg" alt="Apartment" />
 
@@ -176,7 +176,7 @@
                                         <div class="align-self-start">
                                             <h6><strong>Estado:</strong></h6>
                                         </div>
-                                        <div class="align-self-end pl-3">
+                                        <div class="align-self-end pl-2">
                                             <i class="fas fa-check-circle text-success fa-2x"></i>
                                             <h6 class="mt-1">Finalizado</h6>
                                         </div>
@@ -192,7 +192,8 @@
                                     <div class="container mb-3">
                                         <div class="row">
                                             <div class="col">
-                                                <button class="btn btn-outline-primary border" style="min-width: 110px;">Ver
+                                                <button class="btn btn-outline-primary border" style="min-width: 110px;"
+                                                    data-toggle="modal" data-target="#Receipt">Ver
                                                     recibo</button>
                                             </div>
                                         </div>
@@ -201,7 +202,7 @@
                             </div>
                             <div class="col-lg-6 col-xl-4 mt-4">
                                 <!-- Card 1 -->
-                                <div class="card w-100 m-auto text-center border-dark">
+                                <div class="card w-100 m-auto text-center border">
                                     <!-- Card Image -->
                                     <img class="card-img-top" src="../images/home2.jpeg" alt="Apartment" />
 
@@ -226,10 +227,10 @@
                                         </div>
                                     </div>
                                     <div class="card-body border-dark border-top d-flex justify-content-center pb-1">
-                                        <div class="align-self-start">
+                                        <div class="align-self-start py-2">
                                             <h6><strong>Estado:</strong></h6>
                                         </div>
-                                        <div class="align-self-end pl-3">
+                                        <div class="align-self-end">
                                             <i class="fas fa-times-circle text-danger fa-2x"></i>
                                             <h6 class="mt-1">Cancelado<br>(Se pidió cancelar el servicio)</h6>
                                         </div>
@@ -238,7 +239,7 @@
                             </div>
                             <div class="col-lg-6 col-xl-4 mt-4">
                                 <!-- Card 1 -->
-                                <div class="card w-100 m-auto text-center border-dark">
+                                <div class="card w-100 m-auto text-center border">
                                     <!-- Card Image -->
                                     <img class="card-img-top" src="../images/home5.jpeg" alt="Apartment" />
 
@@ -263,7 +264,7 @@
                                         </div>
                                     </div>
                                     <div class="card-body border-dark border-top d-flex justify-content-center pb-1">
-                                        <div class="align-self-start">
+                                        <div class="align-self-start py-2">
                                             <h6><strong>Estado:</strong></h6>
                                         </div>
                                         <div class="align-self-end pl-3">
@@ -277,6 +278,49 @@
                     </div>
                 </div>
         </section>
+
+        <div class="modal fade" id="Receipt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-dark" id="exampleModalLabel">Recibo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-dark">
+                        <table class="table table-striped">
+                            <tbody>
+                                <tr>
+                                    <td scope="row">Servicio de limpieza 5 horas</td>
+                                    <td>S/65.00</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Subtotal</td>
+                                    <td>S/ 65.00</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Recargo</td>
+                                    <td>S/ 0.00</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Descuento</td>
+                                    <td>S/ 0.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Total</th>
+                                    <td>S/ 65.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-primary border m-auto" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Bootstrap script -->
 
         <script type="text/javascript" src="../bower_components/wickedpicker/src/wickedpicker.js"></script>
