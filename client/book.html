@@ -132,7 +132,7 @@
             </nav>
             <div class="col-xl-9 col-lg-9 col-md-8 ml-sm-auto justify-content-center pt-2">
                 <!-- Second navbar -->
-                <div class="text-center container m-auto pt-3">
+                <div class="text-center container m-auto pt-3 pb-3">
                     <button class="btn btn-primary bg-gradient-primary m-2 text-center w-25" style="min-width: 125px;"
                         type="button">
                         Nuevo<br />Servicio
@@ -142,12 +142,12 @@
                             Estado de<br />servicios
                         </button></a>
                 </div>
-                <div class="container mx-2">
-                    <form class="m-auto mt-3 float-center w-80 px-4 text-dark">
+                <div class="container m-auto">
+                    <form class="m-auto mt-3 float-center px-5 text-dark" style="max-width:850px;">
                         <!-- Address Form -->
                         <div class="form-group">
                             <label for="AddressSelect">Dirección:</label>
-                            <select class="form-control" id="AddressSelect">
+                            <select class="form-control border" id="AddressSelect">
                                 <option>Departamento</option>
                                 <option>Casa</option>
                                 <option><a href="adresses.html">Agregar Dirección</a></option>
@@ -157,15 +157,15 @@
                         <!-- Pack Form -->
                         <div class="form-group">
                             <label>Paquete:</label><br>
-                            <div class="btn-group btn-group-toggle m-auto text-center" data-toggle="buttons">
-                                <label class="btn btn-outline-primary my-2 mr-2 text-center rounded">
+                            <div class="btn-group btn-group-toggle m-auto text-center w-100" data-toggle="buttons">
+                                <label class="btn btn-outline-primary text-center rounded w-100 border">
                                     <input type="radio" name="options" id="3horas" autocomplete="off" checked> 3
                                     Horas
                                 </label>
-                                <label class="btn btn-outline-primary m-2 text-center rounded">
+                                <label class="btn btn-outline-primary mx-3 text-center rounded w-100 border">
                                     <input type="radio" name="options" id="5horas" autocomplete="off">5 Horas
                                 </label>
-                                <label class="btn btn-outline-primary m-2 text-center rounded">
+                                <label class="btn btn-outline-primary text-center rounded w-100 border">
                                     <input type="radio" name="options" id="8horas" autocomplete="off">8 Horas
                                 </label>
                             </div>
@@ -175,7 +175,7 @@
                         <div class="form-group">
                             <label for="datepicker">Fecha:</label><br>
                             <!-- Date picker GUI -->
-                            <input class="text-primary m-auto" id="datepicker" width="276" />
+                            <input class="m-auto border" id="datepicker" placeholder="Elige la fecha" />
                             <script>
                                 $('#datepicker').datepicker({
                                     uiLibrary: 'bootstrap4'
@@ -187,7 +187,7 @@
                         <div class="form-group">
                             <label for="TimePicker">Hora de inicio:</label>
                             <!-- Time picker GUI-->
-                            <select class="form-control" id="Time">
+                            <select class="form-control border" id="Time">
                                 <option value="06:00am"> 6:00 am</option>
                                 <option value="06:00am"> 6:30 am</option>
                                 <option value="06:00am"> 7:00 am</option>
@@ -222,31 +222,31 @@
                         <!-- Needs selector -->
                         <div class="form-group">
                             <label>Necesidades:</label><br>
-                            <div class="row">
+                            <div class="row w-100">
                                 <div class="col-6 col-lg-3">
                                     <div class="btn-group-toggle" data-toggle="buttons">
-                                        <label class="btn btn-outline-primary active m-2 w-25" style="min-width: 110px;">
+                                        <label class="btn btn-outline-primary active m-2 w-100 border" style="min-width: 110px;">
                                             <input type="checkbox" checked autocomplete="off">Limpiar
                                         </label>
                                     </div>
                                 </div>
                                 <div class="col-6 col-lg-3">
                                     <div class="btn-group-toggle" data-toggle="buttons">
-                                        <label class="btn btn-outline-primary m-2 w-25" style="min-width: 110px;">
+                                        <label class="btn btn-outline-primary m-2 w-100 border" style="min-width: 110px;">
                                             <input type="checkbox" autocomplete="off">Lavar
                                         </label>
                                     </div>
                                 </div>
                                 <div class="col-6 col-lg-3">
                                     <div class="btn-group-toggle" data-toggle="buttons">
-                                        <label class="btn btn-outline-primary m-2 w-25" style="min-width: 110px;">
+                                        <label class="btn btn-outline-primary m-2 w-100 border" style="min-width: 110px;">
                                             <input type="checkbox" autocomplete="off">Cocinar
                                         </label>
                                     </div>
                                 </div>
                                 <div class="col-6 col-lg-3">
                                     <div class="btn-group-toggle" data-toggle="buttons">
-                                        <label class="btn btn-outline-primary m-2 w-25" style="min-width: 110px;">
+                                        <label class="btn btn-outline-primary m-2 w-100 border" style="min-width: 110px;">
                                             <input type="checkbox" autocomplete="off">Planchar
                                         </label>
                                     </div>
@@ -257,20 +257,39 @@
                         <!-- Aditional comments -->
                         <div class="form-group">
                             <label for="AditionalComment">Comentario (opcional):</label>
-                            <textarea class="form-control" id="Comentario" rows="2"></textarea>
+                            <textarea class="form-control border" id="Comentario" rows="2"></textarea>
                         </div>
 
                         <!-- Price -->
                         <h5>TOTAL: S/.65.00</h5>
                         <!-- Submit Button-->
-                        <button class="btn btn-secondary text-center" style="min-width:200px;" data-toggle="modal"
-                            data-target="SummaryModal">Solicitar</button>
                     </form>
+                    <div class="content w-100 text-center mb-4 mt-2">
+                        <button class="btn btn-secondary w-25 mx-5 border px-5" style="min-width:200px;" data-toggle="modal"
+                            data-target="#SummaryModal">
+                            <h4 class="m-0">Solicitar</h4>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
     </section>
+
+    <div class="modal fade" id="SummaryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h5 class="text-center p-3">¿Seguro que desea postular<br>a este servicio?</h5>
+                    <div class="content m-auto text-center">
+                        <button type="button" class="btn btn-outline-primary border mx-2" data-dismiss="modal" style="min-width:110px;">Cancelar</button>
+                        <button type="button" class="btn btn-secondary border mx-2" style="min-width:110px;">Postular</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Bootstrap script -->
 
     <script type="text/javascript" src="../bower_components/wickedpicker/src/wickedpicker.js"></script>

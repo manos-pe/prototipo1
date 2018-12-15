@@ -260,7 +260,8 @@
                                             recibo</button>
                                     </div>
                                     <div class="col">
-                                        <button class="btn btn-outline-danger border" style="min-width: 110px;">Cancelar</button>
+                                        <button class="btn btn-outline-danger border" style="min-width: 110px;"
+                                            data-toggle="modal" data-target="#ConfirmationModal">Cancelar</button>
                                     </div>
                                 </div>
                             </div>
@@ -441,7 +442,7 @@
 
                 <div class="modal fade" id="Receipt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
-                    <div class="modal-dialog" role="document">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title text-dark" id="exampleModalLabel">Recibo</h5>
@@ -477,6 +478,21 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-outline-primary border m-auto" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="ConfirmationModal" tabindex="-1" role="dialog" aria-labelledby="ConfirmationModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body text-center">
+                                <h5 class="text-dark text-center">¿Seguro que desea cancelar este servicio?</h5>
+                                <div class="mt-3 mx-auto">
+                                    <button class="btn btn-outline-primary border mr-1" data-dismiss="modal">Regresar</button>
+                                    <button class="btn btn-outline-danger border ml-1">Cancelar servicio</button>
+                                </div>
                             </div>
                         </div>
                     </div>
